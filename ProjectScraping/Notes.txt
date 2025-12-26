@@ -1,0 +1,9 @@
+ProjectScraping/
+│
+├─ main.py              # Entry point: mengatur alur eksekusi, threading, dan rate limit
+├─ fetcher.py           # Mengambil snapshot orderbook (10 bid & 10 ask) dari API Stockbit
+├─ db.py                # Menangani koneksi dan penyimpanan data ke MySQL (batch & thread-safe)
+├─ config.py            # Konfigurasi terpusat (token, endpoint API, rate limit, database)
+├─ saham.txt            # Daftar kode emiten saham yang akan diproses
+└─ requirements.txt     # Daftar dependency Python yang dibutuhkan project
+
