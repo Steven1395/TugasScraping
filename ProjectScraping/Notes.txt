@@ -7,3 +7,46 @@ ProjectScraping/
 ├─ saham.txt            # Daftar kode emiten saham yang akan diproses
 └─ requirements.txt     # Daftar dependency Python yang dibutuhkan project
 
+contoh output (Masih belum yakin bener karna market libur):
+MPTY] WIIM
+[833/851] Elapsed: 0j 12m 59d | ETA: 0j 0m 16d
+[EMPTY] WIKA
+[834/851] Elapsed: 0j 13m 0d | ETA: 0j 0m 15d
+[EMPTY] WINS
+[835/851] Elapsed: 0j 13m 1d | ETA: 0j 0m 14d
+[EMPTY] WIRA
+[836/851] Elapsed: 0j 13m 1d | ETA: 0j 0m 14d
+[EMPTY] WMPP
+[837/851] Elapsed: 0j 13m 2d | ETA: 0j 0m 13d
+[EMPTY] WMUU
+[838/851] Elapsed: 0j 13m 3d | ETA: 0j 0m 12d
+[EMPTY] WOOD
+[839/851] Elapsed: 0j 13m 3d | ETA: 0j 0m 11d
+[EMPTY] WOMF
+[840/851] Elapsed: 0j 13m 4d | ETA: 0j 0m 10d
+[EMPTY] WOWS
+[841/851] Elapsed: 0j 13m 4d | ETA: 0j 0m 9d
+[EMPTY] WSBP
+[842/851] Elapsed: 0j 13m 5d | ETA: 0j 0m 8d
+[EMPTY] WSKT
+[843/851] Elapsed: 0j 13m 6d | ETA: 0j 0m 7d
+[EMPTY] WTON
+[844/851] Elapsed: 0j 13m 7d | ETA: 0j 0m 6d
+[EMPTY] YELO
+[845/851] Elapsed: 0j 13m 7d | ETA: 0j 0m 5d
+[EMPTY] YPAS
+[846/851] Elapsed: 0j 13m 8d | ETA: 0j 0m 4d
+[EMPTY] YULE
+[847/851] Elapsed: 0j 13m 8d | ETA: 0j 0m 3d
+[EMPTY] ZBRA
+[848/851] Elapsed: 0j 13m 9d | ETA: 0j 0m 2d
+[EMPTY] ZINC
+[849/851] Elapsed: 0j 13m 10d | ETA: 0j 0m 1d
+[EMPTY] ZONE
+[850/851] Elapsed: 0j 13m 10d | ETA: 0j 0m 0d
+[EMPTY] ZYRX
+[851/851] Elapsed: 0j 13m 12d | ETA: 0j 0m 0d
+
+SELESAI.
+Total waktu: 0j 13m 12d
+Rata-rata per emiten: 0.93 detik

@@ -1,6 +1,6 @@
 # ===== KONFIGURASI UTAMA =====
 
-TOKEN_BEARER = "Bearer PASTE_TOKEN_VALID_DISINI"
+TOKEN_BEARER = "Masukkan TOKEN disini"
 
 API_ORDERBOOK = "https://exodus.stockbit.com/company-price-feed/v2/orderbook/companies/{code}"
 

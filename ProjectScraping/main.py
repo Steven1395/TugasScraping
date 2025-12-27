@@ -1,31 +1,46 @@
-import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 from fetcher import fetch_one
-from config import MAX_WORKERS, REQ_PER_SEC
+import time
+
+BASE_DIR = Path(__file__).resolve().parent
+STOCK_FILE = BASE_DIR / "saham.txt"
 
 def load_stocks():
-    with open("saham.txt") as f:
-        return [x.strip() for x in f if x.strip()]
+    with open(STOCK_FILE, encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+def format_time(seconds):
+    m, s = divmod(int(seconds), 60)
+    h, m = divmod(m, 60)
+    return f"{h}j {m}m {s}d"
 
 def main():
     stocks = load_stocks()
-    delay = 1 / REQ_PER_SEC
+    total = len(stocks)
 
-    print(f"Mulai ambil {len(stocks)} emiten...")
+    print(f"Mulai ambil {total} emiten...")
+    start_time = time.time()
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as exe:
-        futures = []
-        for s in stocks:
-            futures.append(exe.submit(fetch_one, s))
-            time.sleep(delay)
+    for i, code in enumerate(stocks, 1):
+        fetch_one(code)
 
-        for f in as_completed(futures):
-            try:
-                f.result()
-            except Exception as e:
-                print("[ERROR]", e)
+        elapsed = time.time() - start_time
+        avg = elapsed / i
+        est_total = avg * total
+        remaining = est_total - elapsed
 
-    print("SELESAI.")
+        print(
+            f"[{i}/{total}] "
+            f"Elapsed: {format_time(elapsed)} | "
+            f"ETA: {format_time(remaining)}"
+        )
+
+    end_time = time.time()
+    total_time = end_time - start_time
+
+    print("\nSELESAI.")
+    print(f"Total waktu: {format_time(total_time)}")
+    print(f"Rata-rata per emiten: {total_time/total:.2f} detik")
 
 if __name__ == "__main__":
     main()
