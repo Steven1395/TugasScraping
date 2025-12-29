@@ -1,0 +1,729 @@
+{
+  "data": {
+    "average": 73,
+    "bid": [
+      {
+        "price": "74",
+        "que_num": "7",
+        "volume": "358800",
+        "change_percentage": ""
+      },
+      {
+        "price": "73",
+        "que_num": "9",
+        "volume": "382500",
+        "change_percentage": ""
+      },
+      {
+        "price": "72",
+        "que_num": "54",
+        "volume": "922300",
+        "change_percentage": ""
+      },
+      {
+        "price": "71",
+        "que_num": "39",
+        "volume": "588100",
+        "change_percentage": ""
+      },
+      {
+        "price": "70",
+        "que_num": "48",
+        "volume": "1387700",
+        "change_percentage": ""
+      },
+      {
+        "price": "69",
+        "que_num": "20",
+        "volume": "907300",
+        "change_percentage": ""
+      },
+      {
+        "price": "68",
+        "que_num": "11",
+        "volume": "152400",
+        "change_percentage": ""
+      },
+      {
+        "price": "67",
+        "que_num": "8",
+        "volume": "327100",
+        "change_percentage": ""
+      },
+      {
+        "price": "66",
+        "que_num": "9",
+        "volume": "280300",
+        "change_percentage": ""
+      },
+      {
+        "price": "65",
+        "que_num": "10",
+        "volume": "571500",
+        "change_percentage": ""
+      },
+      {
+        "price": "64",
+        "que_num": "9",
+        "volume": "197100",
+        "change_percentage": ""
+      },
+      {
+        "price": "63",
+        "que_num": "7",
+        "volume": "60900",
+        "change_percentage": ""
+      },
+      {
+        "price": "62",
+        "que_num": "11",
+        "volume": "1418200",
+        "change_percentage": ""
+      }
+    ],
+    "change": 3,
+    "close": 75,
+    "country": "ID",
+    "domestic": "100.00",
+    "down": "110",
+    "exchange": "IDX",
+    "fbuy": 73665600,
+    "fnet": 7223300,
+    "foreign": "0.00",
+    "frequency": 559,
+    "fsell": 66442300,
+    "high": 75,
+    "id": "HDIT-0",
+    "lastprice": 75,
+    "low": 72,
+    "offer": [
+      {
+        "price": "75",
+        "que_num": "19",
+        "volume": "131200",
+        "change_percentage": ""
+      },
+      {
+        "price": "76",
+        "que_num": "19",
+        "volume": "354300",
+        "change_percentage": ""
+      },
+      {
+        "price": "77",
+        "que_num": "22",
+        "volume": "380700",
+        "change_percentage": ""
+      },
+      {
+        "price": "78",
+        "que_num": "25",
+        "volume": "580000",
+        "change_percentage": ""
+      },
+      {
+        "price": "79",
+        "que_num": "47",
+        "volume": "778200",
+        "change_percentage": ""
+      },
+      {
+        "price": "80",
+        "que_num": "61",
+        "volume": "1672300",
+        "change_percentage": ""
+      },
+      {
+        "price": "81",
+        "que_num": "16",
+        "volume": "758900",
+        "change_percentage": ""
+      },
+      {
+        "price": "82",
+        "que_num": "18",
+        "volume": "250400",
+        "change_percentage": ""
+      },
+      {
+        "price": "83",
+        "que_num": "24",
+        "volume": "1010200",
+        "change_percentage": ""
+      },
+      {
+        "price": "84",
+        "que_num": "21",
+        "volume": "1209000",
+        "change_percentage": ""
+      },
+      {
+        "price": "85",
+        "que_num": "38",
+        "volume": "1316300",
+        "change_percentage": ""
+      },
+      {
+        "price": "86",
+        "que_num": "18",
+        "volume": "661200",
+        "change_percentage": ""
+      },
+      {
+        "price": "87",
+        "que_num": "13",
+        "volume": "265000",
+        "change_percentage": ""
+      },
+      {
+        "price": "88",
+        "que_num": "9",
+        "volume": "614100",
+        "change_percentage": ""
+      },
+      {
+        "price": "89",
+        "que_num": "21",
+        "volume": "495600",
+        "change_percentage": ""
+      },
+      {
+        "price": "90",
+        "que_num": "88",
+        "volume": "2114500",
+        "change_percentage": ""
+      },
+      {
+        "price": "91",
+        "que_num": "10",
+        "volume": "325800",
+        "change_percentage": ""
+      },
+      {
+        "price": "92",
+        "que_num": "20",
+        "volume": "2095200",
+        "change_percentage": ""
+      },
+      {
+        "price": "93",
+        "que_num": "11",
+        "volume": "292400",
+        "change_percentage": ""
+      },
+      {
+        "price": "94",
+        "que_num": "14",
+        "volume": "372900",
+        "change_percentage": ""
+      },
+      {
+        "price": "95",
+        "que_num": "40",
+        "volume": "6446300",
+        "change_percentage": ""
+      },
+      {
+        "price": "96",
+        "que_num": "20",
+        "volume": "854000",
+        "change_percentage": ""
+      },
+      {
+        "price": "97",
+        "que_num": "44",
+        "volume": "7400100",
+        "change_percentage": ""
+      }
+    ],
+    "open": 73,
+    "percentage_change": 4.17,
+    "previous": 72,
+    "status": "Active",
+    "symbol": "HDIT",
+    "symbol_2": "HDIT",
+    "symbol_3": "HDIT",
+    "tradable": true,
+    "unchanged": "1118",
+    "up": "265",
+    "value": 273523500,
+    "volume": 3743500,
+    "corp_action": {
+      "active": false,
+      "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+      "text": "Perusahaan Memiliki Corporate Action"
+    },
+    "notation": [],
+    "uma": false,
+    "has_foreign_bs": false,
+    "iepiev": {
+      "symbol": "",
+      "status": "STATUS_UNSPECIFIED",
+      "iep": {
+        "raw": 0,
+        "formatted": ""
+      },
+      "iev": {
+        "raw": 0,
+        "formatted": ""
+      },
+      "time_left_seconds": 0,
+      "best_bid_offer": null,
+      "title": "",
+      "iep_changes": {
+        "price": {
+          "raw": 0,
+          "formatted": ""
+        },
+        "percentage": {
+          "raw": 0,
+          "formatted": ""
+        }
+      }
+    },
+    "market_data": [
+      {
+        "label": "All Market",
+        "frequency": {
+          "raw": "559",
+          "formatted": "559"
+        },
+        "volume": {
+          "raw": "3743500",
+          "formatted": "3.74 M"
+        },
+        "value": {
+          "raw": "273523500",
+          "formatted": "274 M"
+        }
+      },
+      {
+        "label": "Regular",
+        "frequency": {
+          "raw": "559",
+          "formatted": "559"
+        },
+        "volume": {
+          "raw": "3743500",
+          "formatted": "3.74 M"
+        },
+        "value": {
+          "raw": "273523500",
+          "formatted": "274 M"
+        }
+      },
+      {
+        "label": "Nego",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      },
+      {
+        "label": "Cash",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      }
+    ],
+    "name": "Hensel Davest Indonesia Tbk.",
+    "icon_url": "https://assets.stockbit.com/logos/companies/HDIT.png",
+    "ara": {
+      "value": "97",
+      "visible": true
+    },
+    "arb": {
+      "value": "62",
+      "visible": true
+    },
+    "company_type": "Saham",
+    "total_bid_offer": {
+      "bid": {
+        "freq": "242",
+        "lot": "7,554,200"
+      },
+      "offer": {
+        "freq": "618",
+        "lot": "30,378,600"
+      }
+    },
+    "next_ara": {
+      "value": "97",
+      "visible": true
+    },
+    "next_arb": {
+      "value": "62",
+      "visible": true
+    },
+    "autoreject_time_left_in_sec": 0,
+    "auto_reject_estimation": [
+      {
+        "value": 18625,
+        "change_to_prev": {
+          "value": 3100,
+          "percentage": 19.97
+        },
+        "change_to_base": {
+          "value": 18553,
+          "percentage": 25768.06
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 15525,
+        "change_to_prev": {
+          "value": 2575,
+          "percentage": 19.88
+        },
+        "change_to_base": {
+          "value": 15453,
+          "percentage": 21462.5
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 12950,
+        "change_to_prev": {
+          "value": 2150,
+          "percentage": 19.91
+        },
+        "change_to_base": {
+          "value": 12878,
+          "percentage": 17886.11
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 10800,
+        "change_to_prev": {
+          "value": 1800,
+          "percentage": 20
+        },
+        "change_to_base": {
+          "value": 10728,
+          "percentage": 14900
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 9000,
+        "change_to_prev": {
+          "value": 1500,
+          "percentage": 20
+        },
+        "change_to_base": {
+          "value": 8928,
+          "percentage": 12400
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 7500,
+        "change_to_prev": {
+          "value": 1250,
+          "percentage": 20
+        },
+        "change_to_base": {
+          "value": 7428,
+          "percentage": 10316.67
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 6250,
+        "change_to_prev": {
+          "value": 1025,
+          "percentage": 19.62
+        },
+        "change_to_base": {
+          "value": 6178,
+          "percentage": 8580.56
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 5225,
+        "change_to_prev": {
+          "value": 1045,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 5153,
+          "percentage": 7156.94
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 4180,
+        "change_to_prev": {
+          "value": 830,
+          "percentage": 24.78
+        },
+        "change_to_base": {
+          "value": 4108,
+          "percentage": 5705.56
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 3350,
+        "change_to_prev": {
+          "value": 670,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 3278,
+          "percentage": 4552.78
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 2680,
+        "change_to_prev": {
+          "value": 530,
+          "percentage": 24.65
+        },
+        "change_to_base": {
+          "value": 2608,
+          "percentage": 3622.22
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 2150,
+        "change_to_prev": {
+          "value": 425,
+          "percentage": 24.64
+        },
+        "change_to_base": {
+          "value": 2078,
+          "percentage": 2886.11
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1725,
+        "change_to_prev": {
+          "value": 345,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 1653,
+          "percentage": 2295.83
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1380,
+        "change_to_prev": {
+          "value": 275,
+          "percentage": 24.89
+        },
+        "change_to_base": {
+          "value": 1308,
+          "percentage": 1816.67
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1105,
+        "change_to_prev": {
+          "value": 220,
+          "percentage": 24.86
+        },
+        "change_to_base": {
+          "value": 1033,
+          "percentage": 1434.72
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 885,
+        "change_to_prev": {
+          "value": 175,
+          "percentage": 24.65
+        },
+        "change_to_base": {
+          "value": 813,
+          "percentage": 1129.17
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 710,
+        "change_to_prev": {
+          "value": 140,
+          "percentage": 24.56
+        },
+        "change_to_base": {
+          "value": 638,
+          "percentage": 886.11
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 570,
+        "change_to_prev": {
+          "value": 114,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 498,
+          "percentage": 691.67
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 456,
+        "change_to_prev": {
+          "value": 90,
+          "percentage": 24.59
+        },
+        "change_to_base": {
+          "value": 384,
+          "percentage": 533.33
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 366,
+        "change_to_prev": {
+          "value": 72,
+          "percentage": 24.49
+        },
+        "change_to_base": {
+          "value": 294,
+          "percentage": 408.33
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 294,
+        "change_to_prev": {
+          "value": 58,
+          "percentage": 24.58
+        },
+        "change_to_base": {
+          "value": 222,
+          "percentage": 308.33
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 236,
+        "change_to_prev": {
+          "value": 61,
+          "percentage": 34.86
+        },
+        "change_to_base": {
+          "value": 164,
+          "percentage": 227.78
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 175,
+        "change_to_prev": {
+          "value": 45,
+          "percentage": 34.62
+        },
+        "change_to_base": {
+          "value": 103,
+          "percentage": 143.06
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 130,
+        "change_to_prev": {
+          "value": 33,
+          "percentage": 34.02
+        },
+        "change_to_base": {
+          "value": 58,
+          "percentage": 80.56
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 97,
+        "change_to_prev": {
+          "value": 25,
+          "percentage": 34.72
+        },
+        "change_to_base": {
+          "value": 25,
+          "percentage": 34.72
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 72,
+        "change_to_prev": {
+          "value": 0,
+          "percentage": 0
+        },
+        "change_to_base": {
+          "value": 0,
+          "percentage": 0
+        },
+        "type": "AUTO_REJECT_TYPE_BASE"
+      },
+      {
+        "value": 62,
+        "change_to_prev": {
+          "value": -10,
+          "percentage": -13.89
+        },
+        "change_to_base": {
+          "value": -10,
+          "percentage": -13.89
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 53,
+        "change_to_prev": {
+          "value": -9,
+          "percentage": -14.52
+        },
+        "change_to_base": {
+          "value": -19,
+          "percentage": -26.39
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 50,
+        "change_to_prev": {
+          "value": -3,
+          "percentage": -5.66
+        },
+        "change_to_base": {
+          "value": -22,
+          "percentage": -30.56
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      }
+    ],
+    "orderbook_active_feature_mobile": "ORDER_BOOK_FEATURE_UNSPECIFIED"
+  },
+  "message": "Successfully get company orderbook"
+}

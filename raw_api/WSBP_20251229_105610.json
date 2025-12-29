@@ -1,0 +1,748 @@
+{
+  "data": {
+    "average": 22,
+    "bid": [],
+    "change": -1,
+    "close": 22,
+    "country": "ID",
+    "domestic": "100.00",
+    "down": "110",
+    "exchange": "IDX",
+    "fbuy": 0,
+    "fnet": 0,
+    "foreign": "0.00",
+    "frequency": 269,
+    "fsell": 0,
+    "high": 22,
+    "id": "WSBP-0",
+    "lastprice": 22,
+    "low": 22,
+    "offer": [],
+    "open": 22,
+    "percentage_change": -4.35,
+    "previous": 23,
+    "status": "Active",
+    "symbol": "WSBP",
+    "symbol_2": "WSBP",
+    "symbol_3": "WSBP",
+    "tradable": true,
+    "unchanged": "1118",
+    "up": "265",
+    "value": 379819000,
+    "volume": 17264500,
+    "corp_action": {
+      "active": false,
+      "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+      "text": "Perusahaan Memiliki Corporate Action"
+    },
+    "notation": [
+      {
+        "code": "E",
+        "desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif"
+      },
+      {
+        "code": "X",
+        "desc": "Efek Bersifat Ekuitas Dalam Pemantauan Khusus"
+      }
+    ],
+    "uma": false,
+    "has_foreign_bs": false,
+    "iepiev": {
+      "symbol": "WSBP",
+      "status": "STATUS_OPEN",
+      "iep": {
+        "raw": 22,
+        "formatted": "22"
+      },
+      "iev": {
+        "raw": 172645,
+        "formatted": "172.65K"
+      },
+      "time_left_seconds": 230,
+      "best_bid_offer": {
+        "bid": {
+          "price": {
+            "raw": 0,
+            "formatted": "0"
+          },
+          "quantity": {
+            "raw": 0,
+            "formatted": "0"
+          },
+          "change_percentage": ""
+        },
+        "offer": {
+          "price": {
+            "raw": 0,
+            "formatted": "0"
+          },
+          "quantity": {
+            "raw": 0,
+            "formatted": "0"
+          },
+          "change_percentage": ""
+        },
+        "time_left_seconds": 7430
+      },
+      "title": "Pemantauan Khusus",
+      "iep_changes": {
+        "price": {
+          "raw": -1,
+          "formatted": "-1"
+        },
+        "percentage": {
+          "raw": -4.347826,
+          "formatted": "-4.35"
+        }
+      }
+    },
+    "market_data": [
+      {
+        "label": "All Market",
+        "frequency": {
+          "raw": "269",
+          "formatted": "269"
+        },
+        "volume": {
+          "raw": "17264500",
+          "formatted": "17.3 M"
+        },
+        "value": {
+          "raw": "379819000",
+          "formatted": "380 M"
+        }
+      },
+      {
+        "label": "Regular",
+        "frequency": {
+          "raw": "269",
+          "formatted": "269"
+        },
+        "volume": {
+          "raw": "17264500",
+          "formatted": "17.3 M"
+        },
+        "value": {
+          "raw": "379819000",
+          "formatted": "380 M"
+        }
+      },
+      {
+        "label": "Nego",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      },
+      {
+        "label": "Cash",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      }
+    ],
+    "name": "Waskita Beton Precast Tbk.",
+    "icon_url": "https://assets.stockbit.com/logos/companies/WSBP.png",
+    "ara": {
+      "value": "25",
+      "visible": true
+    },
+    "arb": {
+      "value": "21",
+      "visible": true
+    },
+    "company_type": "Saham",
+    "total_bid_offer": {
+      "bid": {
+        "freq": "0",
+        "lot": "0"
+      },
+      "offer": {
+        "freq": "0",
+        "lot": "0"
+      }
+    },
+    "next_ara": {
+      "value": "25",
+      "visible": true
+    },
+    "next_arb": {
+      "value": "21",
+      "visible": true
+    },
+    "autoreject_time_left_in_sec": 0,
+    "auto_reject_estimation": [
+      {
+        "value": 200,
+        "change_to_prev": {
+          "value": 17,
+          "percentage": 9.29
+        },
+        "change_to_base": {
+          "value": 177,
+          "percentage": 769.57
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 183,
+        "change_to_prev": {
+          "value": 16,
+          "percentage": 9.58
+        },
+        "change_to_base": {
+          "value": 160,
+          "percentage": 695.65
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 167,
+        "change_to_prev": {
+          "value": 15,
+          "percentage": 9.87
+        },
+        "change_to_base": {
+          "value": 144,
+          "percentage": 626.09
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 152,
+        "change_to_prev": {
+          "value": 13,
+          "percentage": 9.35
+        },
+        "change_to_base": {
+          "value": 129,
+          "percentage": 560.87
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 139,
+        "change_to_prev": {
+          "value": 12,
+          "percentage": 9.45
+        },
+        "change_to_base": {
+          "value": 116,
+          "percentage": 504.35
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 127,
+        "change_to_prev": {
+          "value": 11,
+          "percentage": 9.48
+        },
+        "change_to_base": {
+          "value": 104,
+          "percentage": 452.17
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 116,
+        "change_to_prev": {
+          "value": 10,
+          "percentage": 9.43
+        },
+        "change_to_base": {
+          "value": 93,
+          "percentage": 404.35
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 106,
+        "change_to_prev": {
+          "value": 9,
+          "percentage": 9.28
+        },
+        "change_to_base": {
+          "value": 83,
+          "percentage": 360.87
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 97,
+        "change_to_prev": {
+          "value": 8,
+          "percentage": 8.99
+        },
+        "change_to_base": {
+          "value": 74,
+          "percentage": 321.74
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 89,
+        "change_to_prev": {
+          "value": 8,
+          "percentage": 9.88
+        },
+        "change_to_base": {
+          "value": 66,
+          "percentage": 286.96
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 81,
+        "change_to_prev": {
+          "value": 7,
+          "percentage": 9.46
+        },
+        "change_to_base": {
+          "value": 58,
+          "percentage": 252.17
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 74,
+        "change_to_prev": {
+          "value": 6,
+          "percentage": 8.82
+        },
+        "change_to_base": {
+          "value": 51,
+          "percentage": 221.74
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 68,
+        "change_to_prev": {
+          "value": 6,
+          "percentage": 9.68
+        },
+        "change_to_base": {
+          "value": 45,
+          "percentage": 195.65
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 62,
+        "change_to_prev": {
+          "value": 5,
+          "percentage": 8.77
+        },
+        "change_to_base": {
+          "value": 39,
+          "percentage": 169.57
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 57,
+        "change_to_prev": {
+          "value": 5,
+          "percentage": 9.62
+        },
+        "change_to_base": {
+          "value": 34,
+          "percentage": 147.83
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 52,
+        "change_to_prev": {
+          "value": 4,
+          "percentage": 8.33
+        },
+        "change_to_base": {
+          "value": 29,
+          "percentage": 126.09
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 48,
+        "change_to_prev": {
+          "value": 4,
+          "percentage": 9.09
+        },
+        "change_to_base": {
+          "value": 25,
+          "percentage": 108.7
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 44,
+        "change_to_prev": {
+          "value": 4,
+          "percentage": 10
+        },
+        "change_to_base": {
+          "value": 21,
+          "percentage": 91.3
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 40,
+        "change_to_prev": {
+          "value": 3,
+          "percentage": 8.11
+        },
+        "change_to_base": {
+          "value": 17,
+          "percentage": 73.91
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 37,
+        "change_to_prev": {
+          "value": 3,
+          "percentage": 8.82
+        },
+        "change_to_base": {
+          "value": 14,
+          "percentage": 60.87
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 34,
+        "change_to_prev": {
+          "value": 3,
+          "percentage": 9.68
+        },
+        "change_to_base": {
+          "value": 11,
+          "percentage": 47.83
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 31,
+        "change_to_prev": {
+          "value": 2,
+          "percentage": 6.9
+        },
+        "change_to_base": {
+          "value": 8,
+          "percentage": 34.78
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 29,
+        "change_to_prev": {
+          "value": 2,
+          "percentage": 7.41
+        },
+        "change_to_base": {
+          "value": 6,
+          "percentage": 26.09
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 27,
+        "change_to_prev": {
+          "value": 2,
+          "percentage": 8
+        },
+        "change_to_base": {
+          "value": 4,
+          "percentage": 17.39
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 25,
+        "change_to_prev": {
+          "value": 2,
+          "percentage": 8.7
+        },
+        "change_to_base": {
+          "value": 2,
+          "percentage": 8.7
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 23,
+        "change_to_prev": {
+          "value": 0,
+          "percentage": 0
+        },
+        "change_to_base": {
+          "value": 0,
+          "percentage": 0
+        },
+        "type": "AUTO_REJECT_TYPE_BASE"
+      },
+      {
+        "value": 21,
+        "change_to_prev": {
+          "value": -2,
+          "percentage": -8.7
+        },
+        "change_to_base": {
+          "value": -2,
+          "percentage": -8.7
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 19,
+        "change_to_prev": {
+          "value": -2,
+          "percentage": -9.52
+        },
+        "change_to_base": {
+          "value": -4,
+          "percentage": -17.39
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 18,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -5.26
+        },
+        "change_to_base": {
+          "value": -5,
+          "percentage": -21.74
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 17,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -5.56
+        },
+        "change_to_base": {
+          "value": -6,
+          "percentage": -26.09
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 16,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -5.88
+        },
+        "change_to_base": {
+          "value": -7,
+          "percentage": -30.43
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 15,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -6.25
+        },
+        "change_to_base": {
+          "value": -8,
+          "percentage": -34.78
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 14,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -6.67
+        },
+        "change_to_base": {
+          "value": -9,
+          "percentage": -39.13
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 13,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -7.14
+        },
+        "change_to_base": {
+          "value": -10,
+          "percentage": -43.48
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 12,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -7.69
+        },
+        "change_to_base": {
+          "value": -11,
+          "percentage": -47.83
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 11,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -8.33
+        },
+        "change_to_base": {
+          "value": -12,
+          "percentage": -52.17
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 10,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -9.09
+        },
+        "change_to_base": {
+          "value": -13,
+          "percentage": -56.52
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 9,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -10
+        },
+        "change_to_base": {
+          "value": -14,
+          "percentage": -60.87
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 8,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -11.11
+        },
+        "change_to_base": {
+          "value": -15,
+          "percentage": -65.22
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 7,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -12.5
+        },
+        "change_to_base": {
+          "value": -16,
+          "percentage": -69.57
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 6,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -14.29
+        },
+        "change_to_base": {
+          "value": -17,
+          "percentage": -73.91
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 5,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -16.67
+        },
+        "change_to_base": {
+          "value": -18,
+          "percentage": -78.26
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 4,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -20
+        },
+        "change_to_base": {
+          "value": -19,
+          "percentage": -82.61
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 3,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -25
+        },
+        "change_to_base": {
+          "value": -20,
+          "percentage": -86.96
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 2,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -33.33
+        },
+        "change_to_base": {
+          "value": -21,
+          "percentage": -91.3
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      },
+      {
+        "value": 1,
+        "change_to_prev": {
+          "value": -1,
+          "percentage": -50
+        },
+        "change_to_base": {
+          "value": -22,
+          "percentage": -95.65
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      }
+    ],
+    "orderbook_active_feature_mobile": "ORDER_BOOK_FEATURE_IEP_IEV"
+  },
+  "message": "Successfully get company orderbook"
+}

@@ -1,0 +1,651 @@
+{
+  "data": {
+    "average": 58,
+    "bid": [
+      {
+        "price": "57",
+        "que_num": "58",
+        "volume": "3893100",
+        "change_percentage": ""
+      },
+      {
+        "price": "56",
+        "que_num": "32",
+        "volume": "2488300",
+        "change_percentage": ""
+      },
+      {
+        "price": "55",
+        "que_num": "26",
+        "volume": "1475500",
+        "change_percentage": ""
+      },
+      {
+        "price": "54",
+        "que_num": "16",
+        "volume": "354600",
+        "change_percentage": ""
+      },
+      {
+        "price": "53",
+        "que_num": "8",
+        "volume": "149900",
+        "change_percentage": ""
+      },
+      {
+        "price": "52",
+        "que_num": "10",
+        "volume": "229600",
+        "change_percentage": ""
+      },
+      {
+        "price": "51",
+        "que_num": "6",
+        "volume": "281100",
+        "change_percentage": ""
+      },
+      {
+        "price": "50",
+        "que_num": "18",
+        "volume": "870000",
+        "change_percentage": ""
+      }
+    ],
+    "change": 0,
+    "close": 57,
+    "country": "ID",
+    "domestic": "100.00",
+    "down": "110",
+    "exchange": "IDX",
+    "fbuy": 0,
+    "fnet": 0,
+    "foreign": "0.00",
+    "frequency": 92,
+    "fsell": 0,
+    "high": 58,
+    "id": "NPGF-0",
+    "lastprice": 57,
+    "low": 57,
+    "offer": [
+      {
+        "price": "58",
+        "que_num": "38",
+        "volume": "1719400",
+        "change_percentage": ""
+      },
+      {
+        "price": "59",
+        "que_num": "15",
+        "volume": "1707100",
+        "change_percentage": ""
+      },
+      {
+        "price": "60",
+        "que_num": "15",
+        "volume": "2035400",
+        "change_percentage": ""
+      },
+      {
+        "price": "61",
+        "que_num": "15",
+        "volume": "1341300",
+        "change_percentage": ""
+      },
+      {
+        "price": "62",
+        "que_num": "36",
+        "volume": "2648200",
+        "change_percentage": ""
+      },
+      {
+        "price": "63",
+        "que_num": "26",
+        "volume": "1742500",
+        "change_percentage": ""
+      },
+      {
+        "price": "64",
+        "que_num": "21",
+        "volume": "1459100",
+        "change_percentage": ""
+      },
+      {
+        "price": "65",
+        "que_num": "21",
+        "volume": "4517200",
+        "change_percentage": ""
+      },
+      {
+        "price": "66",
+        "que_num": "23",
+        "volume": "2986800",
+        "change_percentage": ""
+      },
+      {
+        "price": "67",
+        "que_num": "32",
+        "volume": "3669800",
+        "change_percentage": ""
+      },
+      {
+        "price": "68",
+        "que_num": "25",
+        "volume": "2990700",
+        "change_percentage": ""
+      },
+      {
+        "price": "69",
+        "que_num": "26",
+        "volume": "2933700",
+        "change_percentage": ""
+      },
+      {
+        "price": "70",
+        "que_num": "31",
+        "volume": "2771000",
+        "change_percentage": ""
+      },
+      {
+        "price": "71",
+        "que_num": "16",
+        "volume": "2077100",
+        "change_percentage": ""
+      },
+      {
+        "price": "72",
+        "que_num": "16",
+        "volume": "1779000",
+        "change_percentage": ""
+      },
+      {
+        "price": "73",
+        "que_num": "18",
+        "volume": "1553900",
+        "change_percentage": ""
+      },
+      {
+        "price": "74",
+        "que_num": "15",
+        "volume": "692000",
+        "change_percentage": ""
+      },
+      {
+        "price": "75",
+        "que_num": "31",
+        "volume": "7921600",
+        "change_percentage": ""
+      },
+      {
+        "price": "76",
+        "que_num": "35",
+        "volume": "13010600",
+        "change_percentage": ""
+      }
+    ],
+    "open": 57,
+    "percentage_change": 0,
+    "previous": 57,
+    "status": "Active",
+    "symbol": "NPGF",
+    "symbol_2": "NPGF",
+    "symbol_3": "NPGF",
+    "tradable": true,
+    "unchanged": "1118",
+    "up": "265",
+    "value": 105052300,
+    "volume": 1815200,
+    "corp_action": {
+      "active": false,
+      "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+      "text": "Perusahaan Memiliki Corporate Action"
+    },
+    "notation": [],
+    "uma": false,
+    "has_foreign_bs": false,
+    "iepiev": {
+      "symbol": "",
+      "status": "STATUS_UNSPECIFIED",
+      "iep": {
+        "raw": 0,
+        "formatted": ""
+      },
+      "iev": {
+        "raw": 0,
+        "formatted": ""
+      },
+      "time_left_seconds": 0,
+      "best_bid_offer": null,
+      "title": "",
+      "iep_changes": {
+        "price": {
+          "raw": 0,
+          "formatted": ""
+        },
+        "percentage": {
+          "raw": 0,
+          "formatted": ""
+        }
+      }
+    },
+    "market_data": [
+      {
+        "label": "All Market",
+        "frequency": {
+          "raw": "92",
+          "formatted": "92"
+        },
+        "volume": {
+          "raw": "1815200",
+          "formatted": "1.82 M"
+        },
+        "value": {
+          "raw": "105052300",
+          "formatted": "105 M"
+        }
+      },
+      {
+        "label": "Regular",
+        "frequency": {
+          "raw": "92",
+          "formatted": "92"
+        },
+        "volume": {
+          "raw": "1815200",
+          "formatted": "1.82 M"
+        },
+        "value": {
+          "raw": "105052300",
+          "formatted": "105 M"
+        }
+      },
+      {
+        "label": "Nego",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      },
+      {
+        "label": "Cash",
+        "frequency": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "volume": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "value": {
+          "raw": "0",
+          "formatted": "0"
+        }
+      }
+    ],
+    "name": "Nusa Palapa Gemilang Tbk.",
+    "icon_url": "https://assets.stockbit.com/logos/companies/NPGF.png",
+    "ara": {
+      "value": "76",
+      "visible": true
+    },
+    "arb": {
+      "value": "50",
+      "visible": true
+    },
+    "company_type": "Saham",
+    "total_bid_offer": {
+      "bid": {
+        "freq": "174",
+        "lot": "9,742,100"
+      },
+      "offer": {
+        "freq": "455",
+        "lot": "59,556,400"
+      }
+    },
+    "next_ara": {
+      "value": "76",
+      "visible": true
+    },
+    "next_arb": {
+      "value": "50",
+      "visible": true
+    },
+    "autoreject_time_left_in_sec": 0,
+    "auto_reject_estimation": [
+      {
+        "value": 16300,
+        "change_to_prev": {
+          "value": 2700,
+          "percentage": 19.85
+        },
+        "change_to_base": {
+          "value": 16243,
+          "percentage": 28496.49
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 13600,
+        "change_to_prev": {
+          "value": 2250,
+          "percentage": 19.82
+        },
+        "change_to_base": {
+          "value": 13543,
+          "percentage": 23759.65
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 11350,
+        "change_to_prev": {
+          "value": 1875,
+          "percentage": 19.79
+        },
+        "change_to_base": {
+          "value": 11293,
+          "percentage": 19812.28
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 9475,
+        "change_to_prev": {
+          "value": 1575,
+          "percentage": 19.94
+        },
+        "change_to_base": {
+          "value": 9418,
+          "percentage": 16522.81
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 7900,
+        "change_to_prev": {
+          "value": 1300,
+          "percentage": 19.7
+        },
+        "change_to_base": {
+          "value": 7843,
+          "percentage": 13759.65
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 6600,
+        "change_to_prev": {
+          "value": 1100,
+          "percentage": 20
+        },
+        "change_to_base": {
+          "value": 6543,
+          "percentage": 11478.95
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 5500,
+        "change_to_prev": {
+          "value": 1100,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 5443,
+          "percentage": 9549.12
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 4400,
+        "change_to_prev": {
+          "value": 880,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 4343,
+          "percentage": 7619.3
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 3520,
+        "change_to_prev": {
+          "value": 700,
+          "percentage": 24.82
+        },
+        "change_to_base": {
+          "value": 3463,
+          "percentage": 6075.44
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 2820,
+        "change_to_prev": {
+          "value": 560,
+          "percentage": 24.78
+        },
+        "change_to_base": {
+          "value": 2763,
+          "percentage": 4847.37
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 2260,
+        "change_to_prev": {
+          "value": 445,
+          "percentage": 24.52
+        },
+        "change_to_base": {
+          "value": 2203,
+          "percentage": 3864.91
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1815,
+        "change_to_prev": {
+          "value": 360,
+          "percentage": 24.74
+        },
+        "change_to_base": {
+          "value": 1758,
+          "percentage": 3084.21
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1455,
+        "change_to_prev": {
+          "value": 290,
+          "percentage": 24.89
+        },
+        "change_to_base": {
+          "value": 1398,
+          "percentage": 2452.63
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 1165,
+        "change_to_prev": {
+          "value": 230,
+          "percentage": 24.6
+        },
+        "change_to_base": {
+          "value": 1108,
+          "percentage": 1943.86
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 935,
+        "change_to_prev": {
+          "value": 185,
+          "percentage": 24.67
+        },
+        "change_to_base": {
+          "value": 878,
+          "percentage": 1540.35
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 750,
+        "change_to_prev": {
+          "value": 150,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 693,
+          "percentage": 1215.79
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 600,
+        "change_to_prev": {
+          "value": 118,
+          "percentage": 24.48
+        },
+        "change_to_base": {
+          "value": 543,
+          "percentage": 952.63
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 482,
+        "change_to_prev": {
+          "value": 96,
+          "percentage": 24.87
+        },
+        "change_to_base": {
+          "value": 425,
+          "percentage": 745.61
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 386,
+        "change_to_prev": {
+          "value": 76,
+          "percentage": 24.52
+        },
+        "change_to_base": {
+          "value": 329,
+          "percentage": 577.19
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 310,
+        "change_to_prev": {
+          "value": 62,
+          "percentage": 25
+        },
+        "change_to_base": {
+          "value": 253,
+          "percentage": 443.86
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 248,
+        "change_to_prev": {
+          "value": 64,
+          "percentage": 34.78
+        },
+        "change_to_base": {
+          "value": 191,
+          "percentage": 335.09
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 184,
+        "change_to_prev": {
+          "value": 47,
+          "percentage": 34.31
+        },
+        "change_to_base": {
+          "value": 127,
+          "percentage": 222.81
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 137,
+        "change_to_prev": {
+          "value": 35,
+          "percentage": 34.31
+        },
+        "change_to_base": {
+          "value": 80,
+          "percentage": 140.35
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 102,
+        "change_to_prev": {
+          "value": 26,
+          "percentage": 34.21
+        },
+        "change_to_base": {
+          "value": 45,
+          "percentage": 78.95
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 76,
+        "change_to_prev": {
+          "value": 19,
+          "percentage": 33.33
+        },
+        "change_to_base": {
+          "value": 19,
+          "percentage": 33.33
+        },
+        "type": "AUTO_REJECT_TYPE_POSITIVE"
+      },
+      {
+        "value": 57,
+        "change_to_prev": {
+          "value": 0,
+          "percentage": 0
+        },
+        "change_to_base": {
+          "value": 0,
+          "percentage": 0
+        },
+        "type": "AUTO_REJECT_TYPE_BASE"
+      },
+      {
+        "value": 50,
+        "change_to_prev": {
+          "value": -7,
+          "percentage": -12.28
+        },
+        "change_to_base": {
+          "value": -7,
+          "percentage": -12.28
+        },
+        "type": "AUTO_REJECT_TYPE_NEGATIVE"
+      }
+    ],
+    "orderbook_active_feature_mobile": "ORDER_BOOK_FEATURE_UNSPECIFIED"
+  },
+  "message": "Successfully get company orderbook"
+}

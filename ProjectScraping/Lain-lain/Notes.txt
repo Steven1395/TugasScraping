@@ -1,0 +1,1037 @@
+=================================================================================================
+
+ProjectScraping/
+│
+├─ main.py              # Entry point: mengatur alur eksekusi, threading, dan rate limit
+├─ fetcher.py           # Mengambil snapshot orderbook (10 bid & 10 ask) dari API Stockbit
+├─ db.py                # Menangani koneksi dan penyimpanan data ke MySQL (batch & thread-safe)
+├─ config.py            # Konfigurasi terpusat (token, endpoint API, rate limit, database)
+├─ saham.txt            # Daftar kode emiten saham yang akan diproses
+└─ requirements.txt     # Daftar dependency Python yang dibutuhkan project
+
+
+================================================================================================
+SEDIKIT DOKUMENTASI OUTPUT YANG BERHASIL MASUK 
+Catatan untuk memulai program:
+Cari BEARER TOKEN
+paste di config.py
+jalankan main.py
+================================================================================================
+FOLDER raw_api HANYA KENANG-KENANGAN :v (yg berhasil masuk db tak simpan CSV aja)
+================================================================================================
+
+[348/851] Elapsed: 0j 23m 43d | ETA: 0j 34m 17d
+[KOSONG] FREN - Tidak ada antrian saat ini
+[349/851] Elapsed: 0j 23m 43d | ETA: 0j 34m 8d
+[OK] FUJI - 20 baris masuk DB
+[350/851] Elapsed: 0j 23m 44d | ETA: 0j 33m 59d
+[OK] FUTR - 20 baris masuk DB
+[351/851] Elapsed: 0j 23m 45d | ETA: 0j 33m 50d
+[KOSONG] GAMA - Tidak ada antrian saat ini
+[352/851] Elapsed: 0j 23m 46d | ETA: 0j 33m 42d
+[OK] GDST - 20 baris masuk DB
+[353/851] Elapsed: 0j 23m 47d | ETA: 0j 33m 34d
+[OK] GDYR - 20 baris masuk DB
+[354/851] Elapsed: 0j 23m 49d | ETA: 0j 33m 27d
+[OK] GEMA - 20 baris masuk DB
+[355/851] Elapsed: 0j 23m 51d | ETA: 0j 33m 20d
+[OK] GEMS - 20 baris masuk DB
+[356/851] Elapsed: 0j 23m 54d | ETA: 0j 33m 14d
+[OK] GGRM - 20 baris masuk DB
+[357/851] Elapsed: 0j 23m 56d | ETA: 0j 33m 7d
+[OK] GGRP - 20 baris masuk DB
+[358/851] Elapsed: 0j 23m 57d | ETA: 0j 32m 59d
+[OK] GHON - 20 baris masuk DB
+[359/851] Elapsed: 0j 23m 58d | ETA: 0j 32m 52d
+[KOSONG] GIAA - Tidak ada antrian saat ini
+[360/851] Elapsed: 0j 24m 0d | ETA: 0j 32m 44d
+[OK] GJTL - 20 baris masuk DB
+[361/851] Elapsed: 0j 24m 2d | ETA: 0j 32m 37d
+[KOSONG] GLOB - Tidak ada antrian saat ini
+[362/851] Elapsed: 0j 24m 3d | ETA: 0j 32m 29d
+[OK] GLVA - 20 baris masuk DB
+[363/851] Elapsed: 0j 24m 4d | ETA: 0j 32m 21d
+[KOSONG] GMFI - Tidak ada antrian saat ini
+[364/851] Elapsed: 0j 24m 5d | ETA: 0j 32m 14d
+[OK] GMTD - 18 baris masuk DB
+[365/851] Elapsed: 0j 24m 6d | ETA: 0j 32m 6d
+[OK] GOLD - 20 baris masuk DB
+[366/851] Elapsed: 0j 24m 8d | ETA: 0j 31m 59d
+[KOSONG] GOLL - Tidak ada antrian saat ini
+[367/851] Elapsed: 0j 24m 9d | ETA: 0j 31m 51d
+[OK] GOOD - 20 baris masuk DB
+[368/851] Elapsed: 0j 24m 10d | ETA: 0j 31m 43d
+[FAIL] GOZCO parse error: 'NoneType' object has no attribute 'get'
+[369/851] Elapsed: 0j 24m 11d | ETA: 0j 31m 35d
+[OK] GPRA - 20 baris masuk DB
+[370/851] Elapsed: 0j 24m 12d | ETA: 0j 31m 27d
+[OK] GRIA - 20 baris masuk DB
+[371/851] Elapsed: 0j 24m 12d | ETA: 0j 31m 19d
+[FAIL] GROM parse error: 'NoneType' object has no attribute 'get'
+[372/851] Elapsed: 0j 24m 13d | ETA: 0j 31m 11d
+[OK] GRPH - 19 baris masuk DB
+[373/851] Elapsed: 0j 24m 14d | ETA: 0j 31m 3d
+[OK] GSMF - 20 baris masuk DB
+[374/851] Elapsed: 0j 24m 15d | ETA: 0j 30m 55d
+[FAIL] GSJA parse error: 'NoneType' object has no attribute 'get'
+[375/851] Elapsed: 0j 24m 16d | ETA: 0j 30m 48d
+[OK] GTBO - 20 baris masuk DB
+[376/851] Elapsed: 0j 24m 17d | ETA: 0j 30m 41d
+[OK] GTRA - 20 baris masuk DB
+[377/851] Elapsed: 0j 24m 17d | ETA: 0j 30m 33d
+[KOSONG] GTSI - Tidak ada antrian saat ini
+[378/851] Elapsed: 0j 24m 18d | ETA: 0j 30m 25d
+[OK] GUNA - 20 baris masuk DB
+[379/851] Elapsed: 0j 24m 19d | ETA: 0j 30m 17d
+[OK] GWSA - 20 baris masuk DB
+[380/851] Elapsed: 0j 24m 20d | ETA: 0j 30m 9d
+[KOSONG] HADE - Tidak ada antrian saat ini
+[381/851] Elapsed: 0j 24m 20d | ETA: 0j 30m 1d
+[OK] HAIS - 20 baris masuk DB
+[382/851] Elapsed: 0j 24m 21d | ETA: 0j 29m 53d
+[OK] HDFA - 20 baris masuk DB
+[383/851] Elapsed: 0j 24m 21d | ETA: 0j 29m 46d
+[OK] HDIT - 20 baris masuk DB
+[384/851] Elapsed: 0j 24m 22d | ETA: 0j 29m 38d
+[KOSONG] HDTX - Tidak ada antrian saat ini
+[385/851] Elapsed: 0j 24m 23d | ETA: 0j 29m 31d
+[OK] HEAL - 20 baris masuk DB
+[386/851] Elapsed: 0j 24m 23d | ETA: 0j 29m 23d
+[OK] HELI - 20 baris masuk DB
+[387/851] Elapsed: 0j 24m 24d | ETA: 0j 29m 16d
+[OK] HERO - 20 baris masuk DB
+[388/851] Elapsed: 0j 24m 25d | ETA: 0j 29m 8d
+[OK] HEXA - 20 baris masuk DB
+[389/851] Elapsed: 0j 24m 26d | ETA: 0j 29m 1d
+[KOSONG] HKMU - Tidak ada antrian saat ini
+[390/851] Elapsed: 0j 24m 26d | ETA: 0j 28m 53d
+[OK] HMSP - 20 baris masuk DB
+[391/851] Elapsed: 0j 24m 27d | ETA: 0j 28m 46d
+[OK] HOKI - 20 baris masuk DB
+[392/851] Elapsed: 0j 24m 27d | ETA: 0j 28m 38d
+[KOSONG] HOME - Tidak ada antrian saat ini
+[393/851] Elapsed: 0j 24m 28d | ETA: 0j 28m 31d
+[OK] HOPE - 20 baris masuk DB
+[394/851] Elapsed: 0j 24m 29d | ETA: 0j 28m 24d
+[KOSONG] HOTL - Tidak ada antrian saat ini
+[395/851] Elapsed: 0j 24m 29d | ETA: 0j 28m 16d
+[FAIL] HOUSE parse error: 'NoneType' object has no attribute 'get'
+[396/851] Elapsed: 0j 24m 30d | ETA: 0j 28m 9d
+[KOSONG] HRME - Tidak ada antrian saat ini
+[397/851] Elapsed: 0j 24m 30d | ETA: 0j 28m 2d
+[OK] HRTA - 20 baris masuk DB
+[398/851] Elapsed: 0j 24m 31d | ETA: 0j 27m 54d
+[OK] HRUM - 20 baris masuk DB
+[399/851] Elapsed: 0j 24m 32d | ETA: 0j 27m 47d
+[OK] IATA - 20 baris masuk DB
+[400/851] Elapsed: 0j 24m 32d | ETA: 0j 27m 40d
+[KOSONG] IBFN - Tidak ada antrian saat ini
+[401/851] Elapsed: 0j 24m 33d | ETA: 0j 27m 33d
+[OK] IBOS - 13 baris masuk DB
+[402/851] Elapsed: 0j 24m 34d | ETA: 0j 27m 26d
+[KOSONG] IBST - Tidak ada antrian saat ini
+[403/851] Elapsed: 0j 24m 35d | ETA: 0j 27m 19d
+[OK] ICBP - 20 baris masuk DB
+[404/851] Elapsed: 0j 24m 35d | ETA: 0j 27m 12d
+[KOSONG] ICON - Tidak ada antrian saat ini
+[405/851] Elapsed: 0j 24m 36d | ETA: 0j 27m 6d
+[OK] IDEA - 13 baris masuk DB
+[406/851] Elapsed: 0j 24m 37d | ETA: 0j 26m 59d
+[OK] IFII - 20 baris masuk DB
+[407/851] Elapsed: 0j 24m 37d | ETA: 0j 26m 52d
+[OK] IFSH - 20 baris masuk DB
+[408/851] Elapsed: 0j 24m 38d | ETA: 0j 26m 45d
+[OK] IGAR - 20 baris masuk DB
+[409/851] Elapsed: 0j 24m 39d | ETA: 0j 26m 38d
+[FAIL] IGRS parse error: 'NoneType' object has no attribute 'get'
+[410/851] Elapsed: 0j 24m 40d | ETA: 0j 26m 32d
+[KOSONG] IIKP - Tidak ada antrian saat ini
+[411/851] Elapsed: 0j 24m 42d | ETA: 0j 26m 27d
+[KOSONG] IKAI - Tidak ada antrian saat ini
+[412/851] Elapsed: 0j 24m 44d | ETA: 0j 26m 22d
+[OK] IKAN - 20 baris masuk DB
+[413/851] Elapsed: 0j 24m 46d | ETA: 0j 26m 16d
+[OK] IKBI - 20 baris masuk DB
+[414/851] Elapsed: 0j 24m 48d | ETA: 0j 26m 11d
+[OK] IMAS - 20 baris masuk DB
+[415/851] Elapsed: 0j 24m 50d | ETA: 0j 26m 6d
+[FAIL] IMFI parse error: 'NoneType' object has no attribute 'get'
+[416/851] Elapsed: 0j 24m 51d | ETA: 0j 25m 59d
+[OK] IMJS - 20 baris masuk DB
+[417/851] Elapsed: 0j 24m 52d | ETA: 0j 25m 53d
+[OK] IMPC - 20 baris masuk DB
+[418/851] Elapsed: 0j 24m 53d | ETA: 0j 25m 46d
+[KOSONG] INAF - Tidak ada antrian saat ini
+[419/851] Elapsed: 0j 24m 53d | ETA: 0j 25m 39d
+[OK] INAI - 19 baris masuk DB
+[420/851] Elapsed: 0j 24m 54d | ETA: 0j 25m 33d
+[KOSONG] INCF - Tidak ada antrian saat ini
+[421/851] Elapsed: 0j 24m 54d | ETA: 0j 25m 26d
+[OK] INCI - 20 baris masuk DB
+[422/851] Elapsed: 0j 24m 55d | ETA: 0j 25m 20d
+[OK] INCO - 20 baris masuk DB
+[423/851] Elapsed: 0j 24m 56d | ETA: 0j 25m 13d
+[OK] INDF - 20 baris masuk DB
+[424/851] Elapsed: 0j 24m 56d | ETA: 0j 25m 7d
+[OK] INDO - 20 baris masuk DB
+[425/851] Elapsed: 0j 24m 57d | ETA: 0j 25m 0d
+[OK] INDR - 20 baris masuk DB
+[426/851] Elapsed: 0j 24m 58d | ETA: 0j 24m 54d
+[OK] INDS - 20 baris masuk DB
+[427/851] Elapsed: 0j 24m 58d | ETA: 0j 24m 48d
+[OK] INDX - 20 baris masuk DB
+[428/851] Elapsed: 0j 24m 59d | ETA: 0j 24m 41d
+[OK] INDY - 20 baris masuk DB
+[429/851] Elapsed: 0j 24m 59d | ETA: 0j 24m 35d
+[OK] INET - 20 baris masuk DB
+[430/851] Elapsed: 0j 25m 0d | ETA: 0j 24m 28d
+[FAIL] INFR parse error: 'NoneType' object has no attribute 'get'
+[431/851] Elapsed: 0j 25m 1d | ETA: 0j 24m 22d
+[FAIL] INGA parse error: 'NoneType' object has no attribute 'get'
+[432/851] Elapsed: 0j 25m 2d | ETA: 0j 24m 16d
+[OK] INKP - 20 baris masuk DB
+[433/851] Elapsed: 0j 25m 2d | ETA: 0j 24m 10d
+[OK] INOV - 20 baris masuk DB
+[434/851] Elapsed: 0j 25m 3d | ETA: 0j 24m 4d
+[OK] INPC - 20 baris masuk DB
+[435/851] Elapsed: 0j 25m 4d | ETA: 0j 23m 58d
+[OK] INPP - 20 baris masuk DB
+[436/851] Elapsed: 0j 25m 4d | ETA: 0j 23m 52d
+[KOSONG] INPS - Tidak ada antrian saat ini
+[437/851] Elapsed: 0j 25m 5d | ETA: 0j 23m 45d
+[KOSONG] INRU - Tidak ada antrian saat ini
+[438/851] Elapsed: 0j 25m 5d | ETA: 0j 23m 39d
+[KOSONG] INTA - Tidak ada antrian saat ini
+[439/851] Elapsed: 0j 25m 6d | ETA: 0j 23m 33d
+[OK] INTD - 20 baris masuk DB
+[440/851] Elapsed: 0j 25m 6d | ETA: 0j 23m 27d
+[OK] INTP - 20 baris masuk DB
+[441/851] Elapsed: 0j 25m 7d | ETA: 0j 23m 21d
+[OK] IPAC - 14 baris masuk DB
+[442/851] Elapsed: 0j 25m 8d | ETA: 0j 23m 15d
+[OK] IPCC - 20 baris masuk DB
+[443/851] Elapsed: 0j 25m 8d | ETA: 0j 23m 9d
+[OK] IPCM - 20 baris masuk DB
+[444/851] Elapsed: 0j 25m 9d | ETA: 0j 23m 3d
+[OK] IPOL - 20 baris masuk DB
+[445/851] Elapsed: 0j 25m 10d | ETA: 0j 22m 57d
+[KOSONG] IPTV - Tidak ada antrian saat ini
+[446/851] Elapsed: 0j 25m 10d | ETA: 0j 22m 51d
+[OK] IRRA - 20 baris masuk DB
+[447/851] Elapsed: 0j 25m 11d | ETA: 0j 22m 45d
+[OK] ISAT - 20 baris masuk DB
+[448/851] Elapsed: 0j 25m 11d | ETA: 0j 22m 40d
+[OK] ISSP - 20 baris masuk DB
+[449/851] Elapsed: 0j 25m 12d | ETA: 0j 22m 34d
+[OK] ITMA - 20 baris masuk DB
+[450/851] Elapsed: 0j 25m 13d | ETA: 0j 22m 28d
+[KOSONG] ITTG - Tidak ada antrian saat ini
+[451/851] Elapsed: 0j 25m 13d | ETA: 0j 22m 22d
+[OK] JAST - 20 baris masuk DB
+[452/851] Elapsed: 0j 25m 14d | ETA: 0j 22m 16d
+[OK] JAWA - 20 baris masuk DB
+[453/851] Elapsed: 0j 25m 15d | ETA: 0j 22m 11d
+[OK] JAYA - 20 baris masuk DB
+[454/851] Elapsed: 0j 25m 15d | ETA: 0j 22m 5d
+[OK] JECC - 20 baris masuk DB
+[455/851] Elapsed: 0j 25m 16d | ETA: 0j 21m 59d
+[KOSONG] JGLE - Tidak ada antrian saat ini
+[456/851] Elapsed: 0j 25m 17d | ETA: 0j 21m 54d
+[KOSONG] JKSW - Tidak ada antrian saat ini
+[457/851] Elapsed: 0j 25m 18d | ETA: 0j 21m 48d
+[OK] JMAS - 20 baris masuk DB
+[458/851] Elapsed: 0j 25m 19d | ETA: 0j 21m 43d
+[OK] JRPT - 20 baris masuk DB
+[459/851] Elapsed: 0j 25m 20d | ETA: 0j 21m 38d
+[KOSONG] JSKY - Tidak ada antrian saat ini
+[460/851] Elapsed: 0j 25m 21d | ETA: 0j 21m 32d
+[OK] JSMR - 20 baris masuk DB
+[461/851] Elapsed: 0j 25m 21d | ETA: 0j 21m 27d
+[OK] JSPT - 20 baris masuk DB
+[462/851] Elapsed: 0j 25m 22d | ETA: 0j 21m 21d
+[OK] JTPE - 20 baris masuk DB
+[463/851] Elapsed: 0j 25m 23d | ETA: 0j 21m 16d
+[OK] KAEF - 20 baris masuk DB
+[464/851] Elapsed: 0j 25m 23d | ETA: 0j 21m 10d
+[FAIL] KAHU parse error: 'NoneType' object has no attribute 'get'
+[465/851] Elapsed: 0j 25m 24d | ETA: 0j 21m 5d
+[FAIL] KAJA parse error: 'NoneType' object has no attribute 'get'
+[466/851] Elapsed: 0j 25m 24d | ETA: 0j 20m 59d
+[KOSONG] KARW - Tidak ada antrian saat ini
+[467/851] Elapsed: 0j 25m 25d | ETA: 0j 20m 54d
+[KOSONG] KAYU - Tidak ada antrian saat ini
+[468/851] Elapsed: 0j 25m 26d | ETA: 0j 20m 48d
+[KOSONG] KBAG - Tidak ada antrian saat ini
+[469/851] Elapsed: 0j 25m 26d | ETA: 0j 20m 43d
+[OK] KBLI - 20 baris masuk DB
+[470/851] Elapsed: 0j 25m 27d | ETA: 0j 20m 38d
+[OK] KBLM - 20 baris masuk DB
+[471/851] Elapsed: 0j 25m 28d | ETA: 0j 20m 32d
+[OK] KBLV - 20 baris masuk DB
+[472/851] Elapsed: 0j 25m 28d | ETA: 0j 20m 27d
+[KOSONG] KBRI - Tidak ada antrian saat ini
+[473/851] Elapsed: 0j 25m 29d | ETA: 0j 20m 22d
+[OK] KDSI - 18 baris masuk DB
+[474/851] Elapsed: 0j 25m 30d | ETA: 0j 20m 16d
+[OK] KEEN - 20 baris masuk DB
+[475/851] Elapsed: 0j 25m 30d | ETA: 0j 20m 11d
+[OK] KEJU - 20 baris masuk DB
+[476/851] Elapsed: 0j 25m 31d | ETA: 0j 20m 6d
+[KOSONG] KIAS - Tidak ada antrian saat ini
+[477/851] Elapsed: 0j 25m 31d | ETA: 0j 20m 1d
+[OK] KICI - 20 baris masuk DB
+[478/851] Elapsed: 0j 25m 32d | ETA: 0j 19m 55d
+[OK] KIJA - 20 baris masuk DB
+[479/851] Elapsed: 0j 25m 33d | ETA: 0j 19m 50d
+[OK] KKGI - 20 baris masuk DB
+[480/851] Elapsed: 0j 25m 34d | ETA: 0j 19m 45d
+[FAIL] KKOR parse error: 'NoneType' object has no attribute 'get'
+[481/851] Elapsed: 0j 25m 34d | ETA: 0j 19m 40d
+[OK] KLBF - 20 baris masuk DB
+[482/851] Elapsed: 0j 25m 35d | ETA: 0j 19m 35d
+[OK] KMDS - 20 baris masuk DB
+[483/851] Elapsed: 0j 25m 35d | ETA: 0j 19m 30d
+[OK] KMTR - 20 baris masuk DB
+[484/851] Elapsed: 0j 25m 36d | ETA: 0j 19m 24d
+[KOSONG] KOIN - Tidak ada antrian saat ini
+[485/851] Elapsed: 0j 25m 36d | ETA: 0j 19m 19d
+[OK] KONI - 20 baris masuk DB
+[486/851] Elapsed: 0j 25m 37d | ETA: 0j 19m 14d
+[OK] KOPI - 20 baris masuk DB
+[487/851] Elapsed: 0j 25m 38d | ETA: 0j 19m 9d
+[KOSONG] KOTA - Tidak ada antrian saat ini
+[488/851] Elapsed: 0j 25m 38d | ETA: 0j 19m 4d
+[KOSONG] KPAL - Tidak ada antrian saat ini
+[489/851] Elapsed: 0j 25m 39d | ETA: 0j 18m 59d
+[KOSONG] KPAS - Tidak ada antrian saat ini
+[490/851] Elapsed: 0j 25m 39d | ETA: 0j 18m 54d
+[OK] KPIG - 20 baris masuk DB
+[491/851] Elapsed: 0j 25m 40d | ETA: 0j 18m 49d
+[KOSONG] KRAH - Tidak ada antrian saat ini
+[492/851] Elapsed: 0j 25m 41d | ETA: 0j 18m 44d
+[OK] KRAS - 20 baris masuk DB
+[493/851] Elapsed: 0j 25m 41d | ETA: 0j 18m 39d
+[KOSONG] KREN - Tidak ada antrian saat ini
+[494/851] Elapsed: 0j 25m 42d | ETA: 0j 18m 34d
+[OK] KUAS - 20 baris masuk DB
+[495/851] Elapsed: 0j 25m 42d | ETA: 0j 18m 29d
+[FAIL] KZOS parse error: 'NoneType' object has no attribute 'get'
+[496/851] Elapsed: 0j 25m 43d | ETA: 0j 18m 24d
+[OK] LABA - 20 baris masuk DB
+[497/851] Elapsed: 0j 25m 44d | ETA: 0j 18m 19d
+[KOSONG] LAND - Tidak ada antrian saat ini
+[498/851] Elapsed: 0j 25m 44d | ETA: 0j 18m 15d
+[OK] LAPD - 20 baris masuk DB
+[499/851] Elapsed: 0j 25m 45d | ETA: 0j 18m 10d
+[FAIL] LAUT parse error: 'NoneType' object has no attribute 'get'
+[500/851] Elapsed: 0j 25m 46d | ETA: 0j 18m 5d
+[KOSONG] LCGP - Tidak ada antrian saat ini
+[501/851] Elapsed: 0j 25m 46d | ETA: 0j 18m 0d
+[OK] LEAD - 20 baris masuk DB
+[502/851] Elapsed: 0j 25m 47d | ETA: 0j 17m 55d
+[FAIL] LFIN parse error: 'NoneType' object has no attribute 'get'
+[503/851] Elapsed: 0j 25m 48d | ETA: 0j 17m 51d
+[OK] LIFE - 19 baris masuk DB
+[504/851] Elapsed: 0j 25m 48d | ETA: 0j 17m 46d
+[OK] LINK - 20 baris masuk DB
+[505/851] Elapsed: 0j 25m 49d | ETA: 0j 17m 41d
+[OK] LION - 20 baris masuk DB
+[506/851] Elapsed: 0j 25m 50d | ETA: 0j 17m 37d
+[KOSONG] LMAS - Tidak ada antrian saat ini
+[507/851] Elapsed: 0j 25m 51d | ETA: 0j 17m 32d
+[OK] LMPI - 20 baris masuk DB
+[508/851] Elapsed: 0j 25m 52d | ETA: 0j 17m 27d
+[KOSONG] LMSH - Tidak ada antrian saat ini
+[509/851] Elapsed: 0j 25m 52d | ETA: 0j 17m 23d
+[FAIL] LOKA parse error: 'NoneType' object has no attribute 'get'
+[510/851] Elapsed: 0j 25m 53d | ETA: 0j 17m 18d
+[OK] LPCK - 20 baris masuk DB
+[511/851] Elapsed: 0j 25m 54d | ETA: 0j 17m 14d
+[OK] LPGI - 20 baris masuk DB
+[512/851] Elapsed: 0j 25m 55d | ETA: 0j 17m 9d
+[OK] LPKR - 20 baris masuk DB
+[513/851] Elapsed: 0j 25m 56d | ETA: 0j 17m 5d
+[OK] LPLI - 20 baris masuk DB
+[514/851] Elapsed: 0j 25m 57d | ETA: 0j 17m 0d
+[OK] LPPF - 20 baris masuk DB
+[515/851] Elapsed: 0j 25m 57d | ETA: 0j 16m 56d
+[OK] LPPS - 20 baris masuk DB
+[516/851] Elapsed: 0j 25m 58d | ETA: 0j 16m 51d
+[OK] LRNA - 10 baris masuk DB
+[517/851] Elapsed: 0j 25m 59d | ETA: 0j 16m 47d
+[OK] LSIP - 20 baris masuk DB
+[518/851] Elapsed: 0j 26m 0d | ETA: 0j 16m 42d
+[OK] LUCK - 20 baris masuk DB
+[519/851] Elapsed: 0j 26m 1d | ETA: 0j 16m 38d
+[FAIL] LUNA parse error: 'NoneType' object has no attribute 'get'
+[520/851] Elapsed: 0j 26m 1d | ETA: 0j 16m 34d
+[KOSONG] MABA - Tidak ada antrian saat ini
+[521/851] Elapsed: 0j 26m 2d | ETA: 0j 16m 29d
+[KOSONG] MAGP - Tidak ada antrian saat ini
+[522/851] Elapsed: 0j 26m 3d | ETA: 0j 16m 25d
+[OK] MAIN - 20 baris masuk DB
+[523/851] Elapsed: 0j 26m 4d | ETA: 0j 16m 20d
+[KOSONG] MAMI - Tidak ada antrian saat ini
+[524/851] Elapsed: 0j 26m 5d | ETA: 0j 16m 16d
+[FAIL] MANA parse error: 'NoneType' object has no attribute 'get'
+[525/851] Elapsed: 0j 26m 5d | ETA: 0j 16m 12d
+[OK] MANG - 13 baris masuk DB
+[526/851] Elapsed: 0j 26m 6d | ETA: 0j 16m 8d
+[OK] MAPA - 20 baris masuk DB
+[527/851] Elapsed: 0j 26m 7d | ETA: 0j 16m 3d
+[OK] MAPB - 18 baris masuk DB
+[528/851] Elapsed: 0j 26m 8d | ETA: 0j 15m 59d
+[OK] MAPI - 20 baris masuk DB
+[529/851] Elapsed: 0j 26m 9d | ETA: 0j 15m 55d
+[OK] MARK - 20 baris masuk DB
+[530/851] Elapsed: 0j 26m 10d | ETA: 0j 15m 51d
+[KOSONG] MASA - Tidak ada antrian saat ini
+[531/851] Elapsed: 0j 26m 11d | ETA: 0j 15m 46d
+[OK] MAYA - 20 baris masuk DB
+[532/851] Elapsed: 0j 26m 12d | ETA: 0j 15m 42d
+[OK] MBAP - 20 baris masuk DB
+[533/851] Elapsed: 0j 26m 13d | ETA: 0j 15m 38d
+[OK] MBMA - 20 baris masuk DB
+[534/851] Elapsed: 0j 26m 13d | ETA: 0j 15m 34d
+[OK] MBSS - 20 baris masuk DB
+[535/851] Elapsed: 0j 26m 14d | ETA: 0j 15m 30d
+[OK] MBTO - 20 baris masuk DB
+[536/851] Elapsed: 0j 26m 15d | ETA: 0j 15m 25d
+[OK] MCAS - 20 baris masuk DB
+[537/851] Elapsed: 0j 26m 16d | ETA: 0j 15m 21d
+[OK] MCOL - 20 baris masuk DB
+[538/851] Elapsed: 0j 26m 17d | ETA: 0j 15m 17d
+[FAIL] MCOM parse error: 'NoneType' object has no attribute 'get'
+[539/851] Elapsed: 0j 26m 17d | ETA: 0j 15m 13d
+[OK] MCOR - 20 baris masuk DB
+[540/851] Elapsed: 0j 26m 18d | ETA: 0j 15m 9d
+[OK] MDKA - 20 baris masuk DB
+[541/851] Elapsed: 0j 26m 19d | ETA: 0j 15m 5d
+[OK] MDKI - 20 baris masuk DB
+[542/851] Elapsed: 0j 26m 20d | ETA: 0j 15m 0d
+[OK] MDLN - 20 baris masuk DB
+[543/851] Elapsed: 0j 26m 20d | ETA: 0j 14m 56d
+[KOSONG] MDRN - Tidak ada antrian saat ini
+[544/851] Elapsed: 0j 26m 21d | ETA: 0j 14m 52d
+[OK] MEDC - 20 baris masuk DB
+[545/851] Elapsed: 0j 26m 22d | ETA: 0j 14m 48d
+[OK] MEGA - 20 baris masuk DB
+[546/851] Elapsed: 0j 26m 23d | ETA: 0j 14m 44d
+[OK] MEJA - 10 baris masuk DB
+[547/851] Elapsed: 0j 26m 23d | ETA: 0j 14m 40d
+[KOSONG] MENN - Tidak ada antrian saat ini
+[548/851] Elapsed: 0j 26m 24d | ETA: 0j 14m 36d
+[OK] MERK - 20 baris masuk DB
+[549/851] Elapsed: 0j 26m 25d | ETA: 0j 14m 31d
+[KOSONG] META - Tidak ada antrian saat ini
+[550/851] Elapsed: 0j 26m 25d | ETA: 0j 14m 27d
+[KOSONG] MFIN - Tidak ada antrian saat ini
+[551/851] Elapsed: 0j 26m 26d | ETA: 0j 14m 23d
+[KOSONG] MFMI - Tidak ada antrian saat ini
+[552/851] Elapsed: 0j 26m 26d | ETA: 0j 14m 19d
+[OK] MGNA - 11 baris masuk DB
+[553/851] Elapsed: 0j 26m 27d | ETA: 0j 14m 15d
+[OK] MICE - 20 baris masuk DB
+[554/851] Elapsed: 0j 26m 28d | ETA: 0j 14m 11d
+[OK] MIDI - 20 baris masuk DB
+[555/851] Elapsed: 0j 26m 28d | ETA: 0j 14m 7d
+[OK] MIKA - 20 baris masuk DB
+[556/851] Elapsed: 0j 26m 29d | ETA: 0j 14m 3d
+[KOSONG] MINA - Tidak ada antrian saat ini
+[557/851] Elapsed: 0j 26m 30d | ETA: 0j 13m 59d
+[KOSONG] MIRA - Tidak ada antrian saat ini
+[558/851] Elapsed: 0j 26m 31d | ETA: 0j 13m 55d
+[OK] MITI - 20 baris masuk DB
+[559/851] Elapsed: 0j 26m 32d | ETA: 0j 13m 51d
+[KOSONG] MKNT - Tidak ada antrian saat ini
+[560/851] Elapsed: 0j 26m 32d | ETA: 0j 13m 47d
+[OK] MKPI - 17 baris masuk DB
+[561/851] Elapsed: 0j 26m 33d | ETA: 0j 13m 43d
+[OK] MLBI - 20 baris masuk DB
+[562/851] Elapsed: 0j 26m 34d | ETA: 0j 13m 39d
+[OK] MLIA - 20 baris masuk DB
+[563/851] Elapsed: 0j 26m 35d | ETA: 0j 13m 36d
+[OK] MLPL - 20 baris masuk DB
+[564/851] Elapsed: 0j 26m 35d | ETA: 0j 13m 32d
+[OK] MLPT - 20 baris masuk DB
+[565/851] Elapsed: 0j 26m 36d | ETA: 0j 13m 28d
+[OK] MMLP - 20 baris masuk DB
+[566/851] Elapsed: 0j 26m 37d | ETA: 0j 13m 24d
+[OK] MNCN - 20 baris masuk DB
+[567/851] Elapsed: 0j 26m 37d | ETA: 0j 13m 20d
+[OK] MOLI - 20 baris masuk DB
+[568/851] Elapsed: 0j 26m 38d | ETA: 0j 13m 16d
+[OK] MPMX - 20 baris masuk DB
+[569/851] Elapsed: 0j 26m 38d | ETA: 0j 13m 12d
+[OK] MPOW - 20 baris masuk DB
+[570/851] Elapsed: 0j 26m 39d | ETA: 0j 13m 8d
+[OK] MPPA - 19 baris masuk DB
+[571/851] Elapsed: 0j 26m 40d | ETA: 0j 13m 4d
+[OK] MRAT - 13 baris masuk DB
+[572/851] Elapsed: 0j 26m 40d | ETA: 0j 13m 0d
+[OK] MREI - 20 baris masuk DB
+[573/851] Elapsed: 0j 26m 41d | ETA: 0j 12m 57d
+[FAIL] MRKO parse error: 'NoneType' object has no attribute 'get'
+[574/851] Elapsed: 0j 26m 43d | ETA: 0j 12m 53d
+[FAIL] MRTI parse error: 'NoneType' object has no attribute 'get'
+[575/851] Elapsed: 0j 26m 45d | ETA: 0j 12m 50d
+[OK] MSIE - 9 baris masuk DB
+[576/851] Elapsed: 0j 26m 47d | ETA: 0j 12m 47d
+[OK] MSJA - 20 baris masuk DB
+[577/851] Elapsed: 0j 26m 48d | ETA: 0j 12m 43d
+[OK] MSKY - 20 baris masuk DB
+[578/851] Elapsed: 0j 26m 48d | ETA: 0j 12m 39d
+[OK] MSTI - 20 baris masuk DB
+[579/851] Elapsed: 0j 26m 49d | ETA: 0j 12m 36d
+[OK] MTDL - 20 baris masuk DB
+[580/851] Elapsed: 0j 26m 50d | ETA: 0j 12m 32d
+[OK] MTEL - 20 baris masuk DB
+[581/851] Elapsed: 0j 26m 51d | ETA: 0j 12m 28d
+[KOSONG] MTFN - Tidak ada antrian saat ini
+[582/851] Elapsed: 0j 26m 52d | ETA: 0j 12m 25d
+[OK] MTLA - 20 baris masuk DB
+[583/851] Elapsed: 0j 26m 52d | ETA: 0j 12m 21d
+[KOSONG] MTRA - Tidak ada antrian saat ini
+[584/851] Elapsed: 0j 26m 53d | ETA: 0j 12m 17d
+[KOSONG] MTSM - Tidak ada antrian saat ini
+[585/851] Elapsed: 0j 26m 54d | ETA: 0j 12m 14d
+[FAIL] MULIA parse error: 'NoneType' object has no attribute 'get'
+[586/851] Elapsed: 0j 26m 55d | ETA: 0j 12m 10d
+[OK] MYOR - 20 baris masuk DB
+[587/851] Elapsed: 0j 26m 56d | ETA: 0j 12m 6d
+[KOSONG] MYTX - Tidak ada antrian saat ini
+[588/851] Elapsed: 0j 26m 57d | ETA: 0j 12m 3d
+[KOSONG] MYRX - Tidak ada antrian saat ini
+[589/851] Elapsed: 0j 26m 57d | ETA: 0j 11m 59d
+[KOSONG] NAGA - Tidak ada antrian saat ini
+[590/851] Elapsed: 0j 26m 59d | ETA: 0j 11m 56d
+[FAIL] NAGR parse error: 'NoneType' object has no attribute 'get'
+[591/851] Elapsed: 0j 27m 0d | ETA: 0j 11m 52d
+[KOSONG] NASA - Tidak ada antrian saat ini
+[592/851] Elapsed: 0j 27m 1d | ETA: 0j 11m 49d
+[OK] NASI - 20 baris masuk DB
+[593/851] Elapsed: 0j 27m 1d | ETA: 0j 11m 45d
+[KOSONG] NATO - Tidak ada antrian saat ini
+[594/851] Elapsed: 0j 27m 2d | ETA: 0j 11m 42d
+[OK] NAYZ - 11 baris masuk DB
+[595/851] Elapsed: 0j 27m 3d | ETA: 0j 11m 38d
+[OK] NETV - 20 baris masuk DB
+[596/851] Elapsed: 0j 27m 4d | ETA: 0j 11m 34d
+[OK] NFCX - 20 baris masuk DB
+[597/851] Elapsed: 0j 27m 4d | ETA: 0j 11m 31d
+[FAIL] NGIE parse error: 'NoneType' object has no attribute 'get'
+[598/851] Elapsed: 0j 27m 5d | ETA: 0j 11m 27d
+[OK] NICK - 20 baris masuk DB
+[599/851] Elapsed: 0j 27m 6d | ETA: 0j 11m 24d
+[OK] NICL - 20 baris masuk DB
+[600/851] Elapsed: 0j 27m 6d | ETA: 0j 11m 20d
+[OK] NIKL - 20 baris masuk DB
+[601/851] Elapsed: 0j 27m 7d | ETA: 0j 11m 17d
+[KOSONG] NIPS - Tidak ada antrian saat ini
+[602/851] Elapsed: 0j 27m 8d | ETA: 0j 11m 13d
+[OK] NIRO - 20 baris masuk DB
+[603/851] Elapsed: 0j 27m 9d | ETA: 0j 11m 10d
+[OK] NISP - 20 baris masuk DB
+[604/851] Elapsed: 0j 27m 10d | ETA: 0j 11m 6d
+[FAIL] NOSS parse error: 'NoneType' object has no attribute 'get'
+[605/851] Elapsed: 0j 27m 10d | ETA: 0j 11m 3d
+[OK] NPGF - 18 baris masuk DB
+[606/851] Elapsed: 0j 27m 11d | ETA: 0j 10m 59d
+[OK] NRCA - 20 baris masuk DB
+[607/851] Elapsed: 0j 27m 12d | ETA: 0j 10m 56d
+[OK] NZIA - 20 baris masuk DB
+[608/851] Elapsed: 0j 27m 12d | ETA: 0j 10m 52d
+[OK] OASA - 20 baris masuk DB
+[609/851] Elapsed: 0j 27m 13d | ETA: 0j 10m 49d
+[OK] OBMD - 20 baris masuk DB
+[610/851] Elapsed: 0j 27m 14d | ETA: 0j 10m 45d
+[KOSONG] OCAP - Tidak ada antrian saat ini
+[611/851] Elapsed: 0j 27m 14d | ETA: 0j 10m 42d
+[OK] OLIV - 13 baris masuk DB
+[612/851] Elapsed: 0j 27m 15d | ETA: 0j 10m 38d
+[KOSONG] OMRE - Tidak ada antrian saat ini
+[613/851] Elapsed: 0j 27m 16d | ETA: 0j 10m 35d
+[FAIL] OOMA parse error: 'NoneType' object has no attribute 'get'
+[614/851] Elapsed: 0j 27m 16d | ETA: 0j 10m 31d
+[OK] OPMS - 20 baris masuk DB
+[615/851] Elapsed: 0j 27m 17d | ETA: 0j 10m 28d
+[FAIL] OPTX parse error: 'NoneType' object has no attribute 'get'
+[616/851] Elapsed: 0j 27m 18d | ETA: 0j 10m 25d
+[FAIL] ORI parse error: 'NoneType' object has no attribute 'get'
+[617/851] Elapsed: 0j 27m 19d | ETA: 0j 10m 21d
+[OK] PADI - 20 baris masuk DB
+[618/851] Elapsed: 0j 27m 19d | ETA: 0j 10m 18d
+[FAIL] PAGE parse error: 'NoneType' object has no attribute 'get'
+[619/851] Elapsed: 0j 27m 20d | ETA: 0j 10m 14d
+[OK] PALM - 20 baris masuk DB
+[620/851] Elapsed: 0j 27m 21d | ETA: 0j 10m 11d
+[OK] PAMG - 20 baris masuk DB
+[621/851] Elapsed: 0j 27m 21d | ETA: 0j 10m 8d
+[OK] PANI - 20 baris masuk DB
+[622/851] Elapsed: 0j 27m 22d | ETA: 0j 10m 4d
+[OK] PANR - 20 baris masuk DB
+[623/851] Elapsed: 0j 27m 23d | ETA: 0j 10m 1d
+[OK] PANS - 20 baris masuk DB
+[624/851] Elapsed: 0j 27m 23d | ETA: 0j 9m 58d
+[OK] PBID - 20 baris masuk DB
+[625/851] Elapsed: 0j 27m 24d | ETA: 0j 9m 54d
+[KOSONG] PBRX - Tidak ada antrian saat ini
+[626/851] Elapsed: 0j 27m 25d | ETA: 0j 9m 51d
+[OK] PBSA - 20 baris masuk DB
+[627/851] Elapsed: 0j 27m 26d | ETA: 0j 9m 48d
+[KOSONG] PCAR - Tidak ada antrian saat ini
+[628/851] Elapsed: 0j 27m 27d | ETA: 0j 9m 44d
+[FAIL] PCKT parse error: 'NoneType' object has no attribute 'get'
+[629/851] Elapsed: 0j 27m 27d | ETA: 0j 9m 41d
+[OK] PDES - 20 baris masuk DB
+[630/851] Elapsed: 0j 27m 28d | ETA: 0j 9m 38d
+[OK] PEGE - 20 baris masuk DB
+[631/851] Elapsed: 0j 27m 28d | ETA: 0j 9m 34d
+[OK] PGAS - 20 baris masuk DB
+[632/851] Elapsed: 0j 27m 29d | ETA: 0j 9m 31d
+[OK] PGEO - 20 baris masuk DB
+[633/851] Elapsed: 0j 27m 31d | ETA: 0j 9m 28d
+[OK] PGLI - 20 baris masuk DB
+[634/851] Elapsed: 0j 27m 31d | ETA: 0j 9m 25d
+[OK] PGUN - 20 baris masuk DB
+[635/851] Elapsed: 0j 27m 32d | ETA: 0j 9m 22d
+[OK] Pico - 20 baris masuk DB
+[636/851] Elapsed: 0j 27m 32d | ETA: 0j 9m 18d
+[OK] PJAA - 20 baris masuk DB
+[637/851] Elapsed: 0j 27m 33d | ETA: 0j 9m 15d
+[OK] PKPK - 20 baris masuk DB
+[638/851] Elapsed: 0j 27m 34d | ETA: 0j 9m 12d
+[OK] PLAN - 9 baris masuk DB
+[639/851] Elapsed: 0j 27m 35d | ETA: 0j 9m 9d
+[KOSONG] PLAS - Tidak ada antrian saat ini
+[640/851] Elapsed: 0j 27m 35d | ETA: 0j 9m 5d
+[KOSONG] PLIN - Tidak ada antrian saat ini
+[641/851] Elapsed: 0j 27m 36d | ETA: 0j 9m 2d
+[OK] PMJS - 20 baris masuk DB
+[642/851] Elapsed: 0j 27m 36d | ETA: 0j 8m 59d
+[KOSONG] PMMP - Tidak ada antrian saat ini
+[643/851] Elapsed: 0j 27m 37d | ETA: 0j 8m 56d
+[OK] PNBN - 20 baris masuk DB
+[644/851] Elapsed: 0j 27m 37d | ETA: 0j 8m 52d
+[OK] PNBS - 14 baris masuk DB
+[645/851] Elapsed: 0j 27m 38d | ETA: 0j 8m 49d
+[OK] PNGO - 20 baris masuk DB
+[646/851] Elapsed: 0j 27m 38d | ETA: 0j 8m 46d
+[OK] PNIN - 20 baris masuk DB
+[647/851] Elapsed: 0j 27m 39d | ETA: 0j 8m 43d
+[OK] PNLF - 20 baris masuk DB
+[648/851] Elapsed: 0j 27m 39d | ETA: 0j 8m 39d
+[OK] PNSE - 20 baris masuk DB
+[649/851] Elapsed: 0j 27m 40d | ETA: 0j 8m 36d
+[FAIL] POFI parse error: 'NoneType' object has no attribute 'get'
+[650/851] Elapsed: 0j 27m 40d | ETA: 0j 8m 33d
+[KOSONG] POLA - Tidak ada antrian saat ini
+[651/851] Elapsed: 0j 27m 41d | ETA: 0j 8m 30d
+[KOSONG] POLL - Tidak ada antrian saat ini
+[652/851] Elapsed: 0j 27m 41d | ETA: 0j 8m 27d
+[OK] POLU - 10 baris masuk DB
+[653/851] Elapsed: 0j 27m 42d | ETA: 0j 8m 24d
+[KOSONG] POLY - Tidak ada antrian saat ini
+[654/851] Elapsed: 0j 27m 42d | ETA: 0j 8m 20d
+[KOSONG] POOL - Tidak ada antrian saat ini
+[655/851] Elapsed: 0j 27m 43d | ETA: 0j 8m 17d
+[KOSONG] POSA - Tidak ada antrian saat ini
+[656/851] Elapsed: 0j 27m 43d | ETA: 0j 8m 14d
+[OK] POWR - 20 baris masuk DB
+[657/851] Elapsed: 0j 27m 44d | ETA: 0j 8m 11d
+[OK] PPGL - 15 baris masuk DB
+[658/851] Elapsed: 0j 27m 45d | ETA: 0j 8m 8d
+[OK] PPRE - 20 baris masuk DB
+[659/851] Elapsed: 0j 27m 46d | ETA: 0j 8m 5d
+[KOSONG] PPRO - Tidak ada antrian saat ini
+[660/851] Elapsed: 0j 27m 47d | ETA: 0j 8m 2d
+[KOSONG] PRAS - Tidak ada antrian saat ini
+[661/851] Elapsed: 0j 27m 49d | ETA: 0j 7m 59d
+[OK] PRDA - 20 baris masuk DB
+[662/851] Elapsed: 0j 27m 50d | ETA: 0j 7m 56d
+[OK] PRIM - 20 baris masuk DB
+[663/851] Elapsed: 0j 27m 51d | ETA: 0j 7m 53d
+[OK] PSAB - 20 baris masuk DB
+[664/851] Elapsed: 0j 27m 51d | ETA: 0j 7m 50d
+[OK] PSDN - 20 baris masuk DB
+[665/851] Elapsed: 0j 27m 52d | ETA: 0j 7m 47d
+[OK] PSGO - 20 baris masuk DB
+[666/851] Elapsed: 0j 27m 52d | ETA: 0j 7m 44d
+[FAIL] PSHA parse error: 'NoneType' object has no attribute 'get'
+[667/851] Elapsed: 0j 27m 53d | ETA: 0j 7m 41d
+[OK] PSKT - 20 baris masuk DB
+[668/851] Elapsed: 0j 27m 53d | ETA: 0j 7m 38d
+[OK] PTBA - 20 baris masuk DB
+[669/851] Elapsed: 0j 27m 54d | ETA: 0j 7m 35d
+[KOSONG] PTDU - Tidak ada antrian saat ini
+[670/851] Elapsed: 0j 27m 55d | ETA: 0j 7m 32d
+[OK] PTIS - 20 baris masuk DB
+[671/851] Elapsed: 0j 27m 55d | ETA: 0j 7m 29d
+[FAIL] PTPN parse error: 'NoneType' object has no attribute 'get'
+[672/851] Elapsed: 0j 27m 56d | ETA: 0j 7m 26d
+[OK] PTPP - 20 baris masuk DB
+[673/851] Elapsed: 0j 27m 57d | ETA: 0j 7m 23d
+[OK] PTPS - 20 baris masuk DB
+[674/851] Elapsed: 0j 27m 57d | ETA: 0j 7m 20d
+[OK] PTRO - 20 baris masuk DB
+[675/851] Elapsed: 0j 27m 58d | ETA: 0j 7m 17d
+[OK] PTSN - 20 baris masuk DB
+[676/851] Elapsed: 0j 27m 58d | ETA: 0j 7m 14d
+[OK] PUDP - 10 baris masuk DB
+[677/851] Elapsed: 0j 27m 59d | ETA: 0j 7m 11d
+[KOSONG] PURA - Tidak ada antrian saat ini
+[678/851] Elapsed: 0j 27m 59d | ETA: 0j 7m 8d
+[KOSONG] PURE - Tidak ada antrian saat ini
+[679/851] Elapsed: 0j 28m 0d | ETA: 0j 7m 5d
+[OK] PURI - 20 baris masuk DB
+[680/851] Elapsed: 0j 28m 1d | ETA: 0j 7m 2d
+[OK] PWON - 20 baris masuk DB
+[681/851] Elapsed: 0j 28m 1d | ETA: 0j 6m 59d
+[FAIL] PWSI parse error: 'NoneType' object has no attribute 'get'
+[682/851] Elapsed: 0j 28m 2d | ETA: 0j 6m 56d
+[OK] PZZA - 20 baris masuk DB
+[683/851] Elapsed: 0j 28m 2d | ETA: 0j 6m 53d
+[FAIL] QUEEN parse error: 'NoneType' object has no attribute 'get'
+[684/851] Elapsed: 0j 28m 3d | ETA: 0j 6m 50d
+[OK] RAJA - 20 baris masuk DB
+[685/851] Elapsed: 0j 28m 3d | ETA: 0j 6m 48d
+[OK] RALS - 20 baris masuk DB
+[686/851] Elapsed: 0j 28m 4d | ETA: 0j 6m 45d
+[FAIL] RANCH parse error: 'NoneType' object has no attribute 'get'
+[687/851] Elapsed: 0j 28m 4d | ETA: 0j 6m 42d
+[KOSONG] RBMS - Tidak ada antrian saat ini
+[688/851] Elapsed: 0j 28m 5d | ETA: 0j 6m 39d
+[FAIL] RCON parse error: 'NoneType' object has no attribute 'get'
+[689/851] Elapsed: 0j 28m 6d | ETA: 0j 6m 36d
+[FAIL] RDEN parse error: 'NoneType' object has no attribute 'get'
+[690/851] Elapsed: 0j 28m 6d | ETA: 0j 6m 33d
+[OK] RDTX - 15 baris masuk DB
+[691/851] Elapsed: 0j 28m 7d | ETA: 0j 6m 30d
+[OK] REAL - 20 baris masuk DB
+[692/851] Elapsed: 0j 28m 7d | ETA: 0j 6m 27d
+[OK] RELI - 20 baris masuk DB
+[693/851] Elapsed: 0j 28m 8d | ETA: 0j 6m 24d
+[KOSONG] RICY - Tidak ada antrian saat ini
+[694/851] Elapsed: 0j 28m 8d | ETA: 0j 6m 21d
+[KOSONG] RIMO - Tidak ada antrian saat ini
+[695/851] Elapsed: 0j 28m 8d | ETA: 0j 6m 19d
+[OK] RISE - 20 baris masuk DB
+[696/851] Elapsed: 0j 28m 9d | ETA: 0j 6m 16d
+[FAIL] RJEN parse error: 'NoneType' object has no attribute 'get'
+[697/851] Elapsed: 0j 28m 10d | ETA: 0j 6m 13d
+[KOSONG] RODA - Tidak ada antrian saat ini
+[698/851] Elapsed: 0j 28m 10d | ETA: 0j 6m 10d
+[KOSONG] ROCK - Tidak ada antrian saat ini
+[699/851] Elapsed: 0j 28m 11d | ETA: 0j 6m 7d
+[KOSONG] RODA - Tidak ada antrian saat ini
+[700/851] Elapsed: 0j 28m 11d | ETA: 0j 6m 4d
+[OK] ROTI - 20 baris masuk DB
+[701/851] Elapsed: 0j 28m 12d | ETA: 0j 6m 2d
+[KOSONG] RSGK - Tidak ada antrian saat ini
+[702/851] Elapsed: 0j 28m 12d | ETA: 0j 5m 59d
+[OK] RUIS - 20 baris masuk DB
+[703/851] Elapsed: 0j 28m 13d | ETA: 0j 5m 56d
+[OK] RUNS - 16 baris masuk DB
+[704/851] Elapsed: 0j 28m 14d | ETA: 0j 5m 53d
+[OK] SAFE - 20 baris masuk DB
+[705/851] Elapsed: 0j 28m 14d | ETA: 0j 5m 50d
+[FAIL] SAGA parse error: 'NoneType' object has no attribute 'get'
+[706/851] Elapsed: 0j 28m 15d | ETA: 0j 5m 48d
+[OK] SATU - 20 baris masuk DB
+[707/851] Elapsed: 0j 28m 15d | ETA: 0j 5m 45d
+[KOSONG] SBAT - Tidak ada antrian saat ini
+[708/851] Elapsed: 0j 28m 16d | ETA: 0j 5m 42d
+[OK] SBMA - 20 baris masuk DB
+[709/851] Elapsed: 0j 28m 16d | ETA: 0j 5m 39d
+[OK] SCCO - 20 baris masuk DB
+[710/851] Elapsed: 0j 28m 17d | ETA: 0j 5m 37d
+[OK] SCMA - 20 baris masuk DB
+[711/851] Elapsed: 0j 28m 17d | ETA: 0j 5m 34d
+[OK] SCNP - 20 baris masuk DB
+[712/851] Elapsed: 0j 28m 18d | ETA: 0j 5m 31d
+[KOSONG] SCPI - Tidak ada antrian saat ini
+[713/851] Elapsed: 0j 28m 18d | ETA: 0j 5m 28d
+[OK] SDMU - 20 baris masuk DB
+[714/851] Elapsed: 0j 28m 19d | ETA: 0j 5m 26d
+[OK] SDPC - 20 baris masuk DB
+[715/851] Elapsed: 0j 28m 19d | ETA: 0j 5m 23d
+[OK] SDRA - 20 baris masuk DB
+[716/851] Elapsed: 0j 28m 20d | ETA: 0j 5m 20d
+[OK] SEMA - 20 baris masuk DB
+[717/851] Elapsed: 0j 28m 21d | ETA: 0j 5m 17d
+[OK] SGER - 20 baris masuk DB
+[718/851] Elapsed: 0j 28m 21d | ETA: 0j 5m 15d
+[OK] SGRO - 20 baris masuk DB
+[719/851] Elapsed: 0j 28m 22d | ETA: 0j 5m 12d
+[OK] SHID - 20 baris masuk DB
+[720/851] Elapsed: 0j 28m 23d | ETA: 0j 5m 9d
+[OK] SHIP - 20 baris masuk DB
+[721/851] Elapsed: 0j 28m 23d | ETA: 0j 5m 7d
+[KOSONG] SIAP - Tidak ada antrian saat ini
+[722/851] Elapsed: 0j 28m 24d | ETA: 0j 5m 4d
+[OK] SICO - 20 baris masuk DB
+[723/851] Elapsed: 0j 28m 25d | ETA: 0j 5m 1d
+[OK] SIDO - 20 baris masuk DB
+[724/851] Elapsed: 0j 28m 25d | ETA: 0j 4m 59d
+[FAIL] SIER parse error: 'NoneType' object has no attribute 'get'
+[725/851] Elapsed: 0j 28m 26d | ETA: 0j 4m 56d
+[OK] SILO - 20 baris masuk DB
+[726/851] Elapsed: 0j 28m 27d | ETA: 0j 4m 53d
+[KOSONG] SIMA - Tidak ada antrian saat ini
+[727/851] Elapsed: 0j 28m 27d | ETA: 0j 4m 51d
+[OK] SIMP - 20 baris masuk DB
+[728/851] Elapsed: 0j 28m 28d | ETA: 0j 4m 48d
+[KOSONG] SIPD - Tidak ada antrian saat ini
+[729/851] Elapsed: 0j 28m 28d | ETA: 0j 4m 45d
+[OK] SKBM - 19 baris masuk DB
+[730/851] Elapsed: 0j 28m 29d | ETA: 0j 4m 43d
+[OK] SKLT - 20 baris masuk DB
+[731/851] Elapsed: 0j 28m 30d | ETA: 0j 4m 40d
+[OK] SKRN - 20 baris masuk DB
+[732/851] Elapsed: 0j 28m 30d | ETA: 0j 4m 38d
+[KOSONG] SKYB - Tidak ada antrian saat ini
+[733/851] Elapsed: 0j 28m 31d | ETA: 0j 4m 35d
+[OK] SLIS - 20 baris masuk DB
+[734/851] Elapsed: 0j 28m 32d | ETA: 0j 4m 32d
+[OK] SMAR - 20 baris masuk DB
+[735/851] Elapsed: 0j 28m 32d | ETA: 0j 4m 30d
+[OK] SMBR - 20 baris masuk DB
+[736/851] Elapsed: 0j 28m 33d | ETA: 0j 4m 27d
+[KOSONG] SMCB - Tidak ada antrian saat ini
+[737/851] Elapsed: 0j 28m 34d | ETA: 0j 4m 25d
+[OK] SMDM - 20 baris masuk DB
+[738/851] Elapsed: 0j 28m 34d | ETA: 0j 4m 22d
+[OK] SMDR - 20 baris masuk DB
+[739/851] Elapsed: 0j 28m 35d | ETA: 0j 4m 19d
+[OK] SMGR - 20 baris masuk DB
+[740/851] Elapsed: 0j 28m 36d | ETA: 0j 4m 17d
+[OK] SMKL - 20 baris masuk DB
+[741/851] Elapsed: 0j 28m 36d | ETA: 0j 4m 14d
+[OK] SMMA - 20 baris masuk DB
+[742/851] Elapsed: 0j 28m 37d | ETA: 0j 4m 12d
+[OK] SMMT - 20 baris masuk DB
+[743/851] Elapsed: 0j 28m 38d | ETA: 0j 4m 9d
+[OK] SMRA - 20 baris masuk DB
+[744/851] Elapsed: 0j 28m 39d | ETA: 0j 4m 7d
+[KOSONG] SMRU - Tidak ada antrian saat ini
+[745/851] Elapsed: 0j 28m 40d | ETA: 0j 4m 4d
+[OK] SMSM - 20 baris masuk DB
+[746/851] Elapsed: 0j 28m 41d | ETA: 0j 4m 2d
+[KOSONG] SOBI - Tidak ada antrian saat ini
+[747/851] Elapsed: 0j 28m 42d | ETA: 0j 3m 59d
+[OK] SOCI - 20 baris masuk DB
+[748/851] Elapsed: 0j 28m 42d | ETA: 0j 3m 57d
+[FAIL] SOJA parse error: 'NoneType' object has no attribute 'get'
+[749/851] Elapsed: 0j 28m 43d | ETA: 0j 3m 54d
+[OK] SOHO - 20 baris masuk DB
+[750/851] Elapsed: 0j 28m 43d | ETA: 0j 3m 52d
+[OK] SONA - 20 baris masuk DB
+[751/851] Elapsed: 0j 28m 44d | ETA: 0j 3m 49d
+[FAIL] SONS parse error: 'NoneType' object has no attribute 'get'
+[752/851] Elapsed: 0j 28m 45d | ETA: 0j 3m 47d
+[KOSONG] SOSS - Tidak ada antrian saat ini
+[753/851] Elapsed: 0j 28m 46d | ETA: 0j 3m 44d
+[KOSONG] SOTS - Tidak ada antrian saat ini
+[754/851] Elapsed: 0j 28m 46d | ETA: 0j 3m 42d
+[OK] SPMA - 20 baris masuk DB
+[755/851] Elapsed: 0j 28m 47d | ETA: 0j 3m 39d
+[FAIL] SPLC parse error: 'NoneType' object has no attribute 'get'
+[756/851] Elapsed: 0j 28m 48d | ETA: 0j 3m 37d
+[OK] SPMA - 20 baris masuk DB
+[757/851] Elapsed: 0j 28m 48d | ETA: 0j 3m 34d
+[KOSONG] SQMI - Tidak ada antrian saat ini
+[758/851] Elapsed: 0j 28m 49d | ETA: 0j 3m 32d
+[OK] SRAJ - 20 baris masuk DB
+[759/851] Elapsed: 0j 28m 50d | ETA: 0j 3m 29d
+[KOSONG] SRIL - Tidak ada antrian saat ini
+[760/851] Elapsed: 0j 28m 50d | ETA: 0j 3m 27d
+[OK] SRSN - 19 baris masuk DB
+[761/851] Elapsed: 0j 28m 51d | ETA: 0j 3m 24d
+[OK] SRTG - 20 baris masuk DB
+[762/851] Elapsed: 0j 28m 52d | ETA: 0j 3m 22d
+[OK] SSMS - 20 baris masuk DB
+[763/851] Elapsed: 0j 28m 53d | ETA: 0j 3m 19d
+[KOSONG] SSTM - Tidak ada antrian saat ini
+[764/851] Elapsed: 0j 28m 53d | ETA: 0j 3m 17d
+[OK] STAR - 20 baris masuk DB
+[765/851] Elapsed: 0j 28m 54d | ETA: 0j 3m 15d
+[OK] STTP - 17 baris masuk DB
+[766/851] Elapsed: 0j 28m 55d | ETA: 0j 3m 12d
+[KOSONG] SUGI - Tidak ada antrian saat ini
+[767/851] Elapsed: 0j 28m 55d | ETA: 0j 3m 10d
+[OK] SULI - 20 baris masuk DB
+[768/851] Elapsed: 0j 28m 56d | ETA: 0j 3m 7d
+[OK] SULI - 20 baris masuk DB
+[769/851] Elapsed: 0j 28m 57d | ETA: 0j 3m 5d
+[KOSONG] SWAT - Tidak ada antrian saat ini
+[770/851] Elapsed: 0j 28m 57d | ETA: 0j 3m 2d
+[OK] TALF - 20 baris masuk DB
+[771/851] Elapsed: 0j 28m 58d | ETA: 0j 3m 0d
+[KOSONG] TAMA - Tidak ada antrian saat ini
+[772/851] Elapsed: 0j 28m 58d | ETA: 0j 2m 57d
+[KOSONG] TAMU - Tidak ada antrian saat ini
+[773/851] Elapsed: 0j 28m 59d | ETA: 0j 2m 55d
+[KOSONG] TARA - Tidak ada antrian saat ini
+[774/851] Elapsed: 0j 29m 0d | ETA: 0j 2m 53d
+[KOSONG] TAXI - Tidak ada antrian saat ini
+[775/851] Elapsed: 0j 29m 0d | ETA: 0j 2m 50d
+[OK] TAYS - 20 baris masuk DB
+[776/851] Elapsed: 0j 29m 1d | ETA: 0j 2m 48d
+[OK] TBIG - 20 baris masuk DB
+[777/851] Elapsed: 0j 29m 1d | ETA: 0j 2m 45d
+[OK] TBLA - 20 baris masuk DB
+[778/851] Elapsed: 0j 29m 2d | ETA: 0j 2m 43d
+[OK] TCID - 15 baris masuk DB
+[779/851] Elapsed: 0j 29m 3d | ETA: 0j 2m 41d
+[OK] TEBE - 20 baris masuk DB
+[780/851] Elapsed: 0j 29m 3d | ETA: 0j 2m 38d
+[KOSONG] TECH - Tidak ada antrian saat ini
+[781/851] Elapsed: 0j 29m 4d | ETA: 0j 2m 36d
+[KOSONG] TELE - Tidak ada antrian saat ini
+[782/851] Elapsed: 0j 29m 5d | ETA: 0j 2m 33d
+[OK] TGKA - 20 baris masuk DB
+[783/851] Elapsed: 0j 29m 5d | ETA: 0j 2m 31d
+[KOSONG] TGRA - Tidak ada antrian saat ini
+[784/851] Elapsed: 0j 29m 6d | ETA: 0j 2m 29d
+[OK] TIFA - 20 baris masuk DB
+[785/851] Elapsed: 0j 29m 6d | ETA: 0j 2m 26d
+[OK] TINS - 20 baris masuk DB
+[786/851] Elapsed: 0j 29m 7d | ETA: 0j 2m 24d
+[OK] TIRA - 20 baris masuk DB
+[787/851] Elapsed: 0j 29m 8d | ETA: 0j 2m 22d
+[KOSONG] TIRT - Tidak ada antrian saat ini
+[788/851] Elapsed: 0j 29m 8d | ETA: 0j 2m 19d
+[KOSONG] TKGA - Tidak ada antrian saat ini
+[789/851] Elapsed: 0j 29m 9d | ETA: 0j 2m 17d
+[OK] TKIM - 20 baris masuk DB
+[790/851] Elapsed: 0j 29m 10d | ETA: 0j 2m 15d
+[OK] TMAS - 20 baris masuk DB
+[791/851] Elapsed: 0j 29m 10d | ETA: 0j 2m 12d
+[OK] TMPO - 20 baris masuk DB
+[792/851] Elapsed: 0j 29m 11d | ETA: 0j 2m 10d
+[OK] TNCA - 20 baris masuk DB
+[793/851] Elapsed: 0j 29m 12d | ETA: 0j 2m 8d
+[OK] TOBA - 20 baris masuk DB
+[794/851] Elapsed: 0j 29m 12d | ETA: 0j 2m 5d
+[OK] TOSK - 18 baris masuk DB
+[795/851] Elapsed: 0j 29m 13d | ETA: 0j 2m 3d
+[OK] TOTL - 20 baris masuk DB
+[796/851] Elapsed: 0j 29m 13d | ETA: 0j 2m 1d
+[KOSONG] TOPS - Tidak ada antrian saat ini
+[797/851] Elapsed: 0j 29m 14d | ETA: 0j 1m 58d
+[OK] TOTO - 20 baris masuk DB
+[798/851] Elapsed: 0j 29m 15d | ETA: 0j 1m 56d
+[OK] TOWR - 20 baris masuk DB
+[799/851] Elapsed: 0j 29m 16d | ETA: 0j 1m 54d
+[OK] TPMA - 20 baris masuk DB
+[800/851] Elapsed: 0j 29m 16d | ETA: 0j 1m 51d
+[OK] TPIA - 20 baris masuk DB
+[801/851] Elapsed: 0j 29m 17d | ETA: 0j 1m 49d
+[KOSONG] TRAM - Tidak ada antrian saat ini
+[802/851] Elapsed: 0j 29m 18d | ETA: 0j 1m 47d
+[KOSONG] TRIL - Tidak ada antrian saat ini
+[803/851] Elapsed: 0j 29m 18d | ETA: 0j 1m 45d
+[OK] TRIS - 20 baris masuk DB
+[804/851] Elapsed: 0j 29m 19d | ETA: 0j 1m 42d
+[KOSONG] TRON - Tidak ada antrian saat ini
+[805/851] Elapsed: 0j 29m 20d | ETA: 0j 1m 40d
+[KOSONG] TRUE - Tidak ada antrian saat ini
+[806/851] Elapsed: 0j 29m 20d | ETA: 0j 1m 38d
+[OK] TRUK - 20 baris masuk DB
+[807/851] Elapsed: 0j 29m 21d | ETA: 0j 1m 36d
+[OK] TRUS - 20 baris masuk DB
+[808/851] Elapsed: 0j 29m 22d | ETA: 0j 1m 33d
+[OK] TSPC - 20 baris masuk DB
+[809/851] Elapsed: 0j 29m 23d | ETA: 0j 1m 31d
+[KOSONG] TURI - Tidak ada antrian saat ini
+[810/851] Elapsed: 0j 29m 23d | ETA: 0j 1m 29d
+[OK] ULTJ - 20 baris masuk DB
+[811/851] Elapsed: 0j 29m 24d | ETA: 0j 1m 27d
+[OK] UNIC - 20 baris masuk DB
+[812/851] Elapsed: 0j 29m 25d | ETA: 0j 1m 24d
+[KOSONG] UNIT - Tidak ada antrian saat ini
+[813/851] Elapsed: 0j 29m 26d | ETA: 0j 1m 22d
+[KOSONG] UNSP - Tidak ada antrian saat ini
+[814/851] Elapsed: 0j 29m 29d | ETA: 0j 1m 20d
+[OK] UNTR - 20 baris masuk DB
+[815/851] Elapsed: 0j 29m 32d | ETA: 0j 1m 18d
+[OK] UNVR - 20 baris masuk DB
+[816/851] Elapsed: 0j 29m 33d | ETA: 0j 1m 16d
+[OK] URBN - 20 baris masuk DB
+[817/851] Elapsed: 0j 29m 35d | ETA: 0j 1m 13d
+[OK] VICI - 20 baris masuk DB
+[818/851] Elapsed: 0j 29m 37d | ETA: 0j 1m 11d
+[OK] VICO - 20 baris masuk DB
+[819/851] Elapsed: 0j 29m 38d | ETA: 0j 1m 9d
+[OK] VINS - 20 baris masuk DB
+[820/851] Elapsed: 0j 29m 41d | ETA: 0j 1m 7d
+[KOSONG] VIVA - Tidak ada antrian saat ini
+[821/851] Elapsed: 0j 29m 42d | ETA: 0j 1m 5d
+[OK] VKTR - 20 baris masuk DB
+[822/851] Elapsed: 0j 29m 42d | ETA: 0j 1m 2d
+[OK] VOKS - 20 baris masuk DB
+[823/851] Elapsed: 0j 29m 43d | ETA: 0j 1m 0d
+[OK] VRNA - 20 baris masuk DB
+[824/851] Elapsed: 0j 29m 44d | ETA: 0j 0m 58d
+[OK] WAPO - 20 baris masuk DB
+[825/851] Elapsed: 0j 29m 45d | ETA: 0j 0m 56d
+[FAIL] WAR parse error: 'NoneType' object has no attribute 'get'
+[826/851] Elapsed: 0j 29m 46d | ETA: 0j 0m 54d
+[FAIL] WAVO parse error: 'NoneType' object has no attribute 'get'
+[827/851] Elapsed: 0j 29m 46d | ETA: 0j 0m 51d
+[OK] WEHA - 20 baris masuk DB
+[828/851] Elapsed: 0j 29m 47d | ETA: 0j 0m 49d
+[OK] WEGE - 20 baris masuk DB
+[829/851] Elapsed: 0j 29m 47d | ETA: 0j 0m 47d
+[FAIL] WEST parse error: 'NoneType' object has no attribute 'get'
+[830/851] Elapsed: 0j 29m 48d | ETA: 0j 0m 45d
+[KOSONG] WICO - Tidak ada antrian saat ini
+[831/851] Elapsed: 0j 29m 49d | ETA: 0j 0m 43d
+[OK] WIFI - 20 baris masuk DB
+[832/851] Elapsed: 0j 29m 50d | ETA: 0j 0m 40d
+[OK] WIIM - 20 baris masuk DB
+[833/851] Elapsed: 0j 29m 50d | ETA: 0j 0m 38d
+[KOSONG] WIKA - Tidak ada antrian saat ini
+[834/851] Elapsed: 0j 29m 51d | ETA: 0j 0m 36d
+[OK] WINS - 20 baris masuk DB
+[835/851] Elapsed: 0j 29m 52d | ETA: 0j 0m 34d
+[FAIL] WIRA parse error: 'NoneType' object has no attribute 'get'
+[836/851] Elapsed: 0j 29m 52d | ETA: 0j 0m 32d
+[KOSONG] WMPP - Tidak ada antrian saat ini
+[837/851] Elapsed: 0j 29m 53d | ETA: 0j 0m 29d
+[KOSONG] WMUU - Tidak ada antrian saat ini
+[838/851] Elapsed: 0j 29m 54d | ETA: 0j 0m 27d
+[OK] WOOD - 20 baris masuk DB
+[839/851] Elapsed: 0j 29m 54d | ETA: 0j 0m 25d
+[OK] WOMF - 20 baris masuk DB
+[840/851] Elapsed: 0j 29m 55d | ETA: 0j 0m 23d
+[OK] WOWS - 20 baris masuk DB
+[841/851] Elapsed: 0j 29m 55d | ETA: 0j 0m 21d
+[KOSONG] WSBP - Tidak ada antrian saat ini
+[842/851] Elapsed: 0j 29m 56d | ETA: 0j 0m 19d
+[KOSONG] WSKT - Tidak ada antrian saat ini
+[843/851] Elapsed: 0j 29m 57d | ETA: 0j 0m 17d
+[OK] WTON - 20 baris masuk DB
+[844/851] Elapsed: 0j 29m 57d | ETA: 0j 0m 14d
+[KOSONG] YELO - Tidak ada antrian saat ini
+[845/851] Elapsed: 0j 29m 58d | ETA: 0j 0m 12d
+[OK] YPAS - 20 baris masuk DB
+[846/851] Elapsed: 0j 29m 59d | ETA: 0j 0m 10d
+[OK] YULE - 20 baris masuk DB
+[847/851] Elapsed: 0j 30m 0d | ETA: 0j 0m 8d
+[KOSONG] ZBRA - Tidak ada antrian saat ini
+[848/851] Elapsed: 0j 30m 0d | ETA: 0j 0m 6d
+[KOSONG] ZINC - Tidak ada antrian saat ini
+[849/851] Elapsed: 0j 30m 1d | ETA: 0j 0m 4d
+[OK] ZONE - 20 baris masuk DB
+[850/851] Elapsed: 0j 30m 1d | ETA: 0j 0m 2d
+[OK] ZYRX - 20 baris masuk DB
+[851/851] Elapsed: 0j 30m 2d | ETA: 0j 0m 0d
+
+SELESAI.
+Total waktu: 0j 30m 2d
+Rata-rata per emiten: 2.12 detik
+==================================================================================================
+==================================================================================================
+
+*Data di atas hasil scrapping yang  berhasil dari sekuritas STOCKBIT 

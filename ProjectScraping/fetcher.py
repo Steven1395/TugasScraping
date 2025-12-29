@@ -15,48 +15,54 @@ def fetch_one(stock_code):
     try:
         r = requests.get(url, headers=HEADERS, timeout=HTTP_TIMEOUT)
     except Exception as e:
-        print(f"[ERROR] {stock_code} request failed: {e}")
+        print(f"[ERROR] {stock_code} request error: {e}")
         return
 
-    # === AUTH ERROR ===
+    # === 1. CEK AUTH ===
     if r.status_code == 401:
-        raise RuntimeError("TOKEN EXPIRED")
+        raise RuntimeError("TOKEN EXPIRED - Ambil token baru di Chrome!")
 
-    # === HTTP ERROR ===
     if r.status_code != 200:
-        print(f"[FAIL] {stock_code} status {r.status_code}")
+        print(f"[FAIL] {stock_code} HTTP {r.status_code}")
         return
 
-    # === PARSE JSON AMAN ===
+    # === 2. PARSE DATA (Sesuai Raw JSON yang kamu kirim) ===
     try:
         payload = r.json()
-    except Exception:
-        print(f"[FAIL] {stock_code} invalid JSON")
-        return
-
-    data = payload.get("data")
-
-    # === GUARD PALING PENTING (ANTI CRASH) ===
-    if not isinstance(data, dict):
-        print(f"[EMPTY] {stock_code}")
-        return
-
-    bids = data.get("bids", [])[:10]
-    asks = data.get("asks", [])[:10]
-
-    # Kalau bener-bener kosong
-    if not bids and not asks:
-        print(f"[EMPTY] {stock_code}")
+        data = payload.get("data", {})
+        
+        # KEY ASLI: 'bid' dan 'offer'
+        raw_bids = data.get("bid", [])[:10]
+        raw_offers = data.get("offer", [])[:10]
+    except Exception as e:
+        print(f"[FAIL] {stock_code} parse error: {e}")
         return
 
     ts = datetime.now()
     rows = []
 
-    for i, b in enumerate(bids, 1):
-        rows.append((ts, stock_code, "BID", i, b["price"], b["volume"]))
+    # === 3. MAPPING BID (BELI) ===
+    for i, b in enumerate(raw_bids, 1):
+        try:
+            # Konversi string ke int karena JSON Stockbit itu string
+            price = int(b["price"])
+            volume = int(b["volume"])
+            rows.append((ts, stock_code, "BID", i, price, volume))
+        except (KeyError, ValueError):
+            continue
 
-    for i, a in enumerate(asks, 1):
-        rows.append((ts, stock_code, "ASK", i, a["price"], a["volume"]))
+    # === 4. MAPPING OFFER (JUAL) ===
+    for i, o in enumerate(raw_offers, 1):
+        try:
+            price = int(o["price"])
+            volume = int(o["volume"])
+            rows.append((ts, stock_code, "ASK", i, price, volume))
+        except (KeyError, ValueError):
+            continue
 
-    insert_orderbook(rows)
-    print(f"[OK] {stock_code}")
+    # === 5. INSERT KE DATABASE ===
+    if rows:
+        insert_orderbook(rows)
+        print(f"[OK] {stock_code} - {len(rows)} baris masuk DB")
+    else:
+        print(f"[KOSONG] {stock_code} - Tidak ada antrian saat ini")
