@@ -10,7 +10,7 @@
 
 
 
-===============================================================================
+========================================================================
 #### Contoh output berhasil ada di folder "Lain-lain" yaitu "stock_db_output.csv"
 
 #### "Notes.txt" ada contoh berjalannya program yang berhasil
