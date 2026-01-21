@@ -108,9 +108,9 @@ Tujuannya agar konfigurasi mudah diubah tanpa mengubah logika program.
 
 ## Output Program
 Contoh output berhasil tersedia di folder Lain-lain:
-    - stock_db_output.csv: hasil export database
-    - stock_db_dump.sql: dump database MySQL
-    - File Notes.txt berisi contoh log eksekusi program yang berhasil.
+- stock_db_output.csv: hasil export database
+- stock_db_dump.sql: dump database MySQL
+- File Notes.txt berisi contoh log eksekusi program yang berhasil.
 
 
 ## Kesimpulan
