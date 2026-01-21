@@ -40,7 +40,11 @@ Metode yang digunakan adalah HTTP API Scraping (REST API), bukan web scraping be
     - Paste Bearer Token ke dalam file config.py
 
 3. Menjalankan Program Scraping
-    - jalankan "main.py"
+    - jalankan "main.py" 
+```
+    cd TugasScraping/ProjectScraping
+    python main.py
+```
 
 ## Dashboard Sederhana
 
