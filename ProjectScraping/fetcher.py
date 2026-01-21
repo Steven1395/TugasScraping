@@ -26,7 +26,7 @@ def fetch_one(stock_code):
         print(f"[FAIL] {stock_code} HTTP {r.status_code}")
         return
 
-    # === 2. PARSE DATA (Sesuai Raw JSON yang kamu kirim) ===
+    # === 2. PARSE DATA (Sesuai Raw JSON) ===
     try:
         payload = r.json()
         data = payload.get("data", {})
