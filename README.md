@@ -49,12 +49,14 @@ Dashboard dibuat untuk menampilkan hasil scraping yang sudah tersimpan di databa
 ### Cara Menjalankan Dashboard
 
 1. Masuk ke folder project:
-
-    - cd TugasScraping/ProjectScraping
+```
+    cd TugasScraping/ProjectScraping
+```
 
 2. Jalankan dashboard:
-
-    - streamlit run dashboard.py
+```
+    streamlit run dashboard.py
+```
 
 ## Penjelasan File Utama
 ### 1. main.py
